@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="RootModule">
+    <File Path="App\app.js" Url="App/app.js" ReplaceContent="TRUE" />
+    <File Path="App\Helpers\jquery-extensions.js" Url="App/Helpers/jquery-extensions.js" ReplaceContent="TRUE" />
+    <File Path="App\Controllers\mainController.js" Url="App/Controllers/mainController.js" ReplaceContent="TRUE" />
+    <File Path="App\Controllers\eventosController.js" Url="App/Controllers/eventosController.js" ReplaceContent="TRUE" />
+    <File Path="App\Services\eventosService.js" Url="App/Services/eventosService.js" ReplaceContent="TRUE" />
+    <File Path="App\Views\eventos\listar.html" Url="App/Views/eventos/listar.html" ReplaceContent="TRUE" />
+    <File Path="App\Views\layout\topo.html" Url="App/Views/layout/topo.html" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

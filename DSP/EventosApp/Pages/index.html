@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="eventosApp">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <!-- libs -->
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/angular.js"></script>
+
+    <!-- app -->
+    <script src="App/app.js"></script>
+
+    <!-- controllers -->
+    <script src="App/Controllers/mainController.js"></script>
+    <script src="App/Controllers/eventosController.js"></script>
+
+    <!-- services -->
+    <script src="App/Services/eventosService.js"></script>
+</head>
+<body>
+    <div ng-include="'App/Views/layout/topo.html'"></div>
+    <div ng-include="'App/Views/eventos/listar.html'"></div>
+</body>
+</html>
