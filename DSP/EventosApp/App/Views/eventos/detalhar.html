@@ -15,7 +15,13 @@
         </div>
     </div>
 </div>
-
+<div class="container margin-top-20">
+    <ol class="breadcrumb font-mon">
+        <li><a href="#/main">Início</a></li>
+        <li><a href="#/eventos/">Eventos</a></li>
+        <li class="active">{{evento.titulo}}</li>
+    </ol>
+</div>
 <div class="container">
     <div class="row">
         <!--<div class="col-md-12">
@@ -24,12 +30,12 @@
             </div>
         </div>-->
     </div>
-    <div class="row margin-top-60">
+    <div class="row">
         <div class="col-md-8">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="font-mon no-margin">
-                        Detalhes do evento
+                        Detalhes do Evento
                     </h4>
                     <!--<p>{{evento.detalhamento}}</p>-->
                 </div>
@@ -59,12 +65,12 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4 class="no-margin font-mon">Organizado por: {{evento.organizador}}</h4>
+                    <h4 class="no-margin font-mon">Organizador: {{evento.organizador}}</h4>
                 </div>
                 <div class="panel-body">
                     <h4 class="font-mon no-margin "><i class="fa fa-calendar"></i> {{evento.inicio}} até {{evento.termino}}</h4>
                     <hr />
-                    <h4 class="font-mon no-margin margin-top-10"><i class="fa fa-map-marker"></i> {{evento.local}}</h4>
+                    <h4 class="font-mon no-margin"><i class="fa fa-map-marker"></i> {{evento.local}}</h4>
                 </div>
             </div>
             <a class="font-mon btn btn-success btn-inscricao btn-lg margin-top-10" role="button" data-ng-click="inscricao(evento)">REALIZAR MINHA INSCRIÇÃO</a>
