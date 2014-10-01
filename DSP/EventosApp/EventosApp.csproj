@@ -53,12 +53,14 @@
     <Content Include="App\Controllers\DetalharEventosController.js" />
     <Content Include="App\Controllers\ListarEventosController.js" />
     <Content Include="App\Controllers\LauncherController.js" />
+    <Content Include="App\Controllers\SharePointAppChromeController.js" />
     <Content Include="App\Controllers\MainController.js" />
     <Content Include="App\Helpers\jquery.helpers.js" />
     <Content Include="App\Services\SharePointContextService.js" />
     <Content Include="App\Services\EventosService.js" />
     <Content Include="App\Views\eventos\detalhar.html" />
     <Content Include="App\Views\eventos\listar.html" />
+    <Content Include="App\Views\layout\sharepointAppChrome.html" />
     <Content Include="App\Views\layout\main.html" />
     <Content Include="Elements.xml" />
     <Content Include="Pages\launcher.html" />

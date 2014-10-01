@@ -8,6 +8,7 @@
     angular.module('eventosApp')
         .controller(controllerName,
                 ['$scope',
+                 '$log',
                  '$location',
                  '$routeParams',
                  'EventosService',
@@ -15,7 +16,7 @@
                 ]);
 
     // definição do controller
-    function DetalharEventosController($scope, $location, $routeParams, EventosService) {
+    function DetalharEventosController($scope, $log, $location, $routeParams, EventosService) {
 
         var eventoId = $routeParams.id;
 
@@ -30,6 +31,8 @@
                 $location.path("/eventos");
             }
         };
+
+        $log.info('Controller [' + controllerName + '] carregado!');
     };
 
 }());

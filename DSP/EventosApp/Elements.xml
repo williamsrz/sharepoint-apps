@@ -13,5 +13,7 @@
     <File Path="App\Services\SharePointContextService.js" Url="App/Services/SharePointContextService.js" ReplaceContent="TRUE" />
     <File Path="App\app.launcher.js" Url="App/app.launcher.js" ReplaceContent="TRUE" />
     <File Path="App\Controllers\LauncherController.js" Url="App/Controllers/LauncherController.js" ReplaceContent="TRUE" />
+    <File Path="App\Controllers\SharePointAppChromeController.js" Url="App/Controllers/SharePointAppChromeController.js" ReplaceContent="TRUE" />
+    <File Path="App\Views\layout\sharepointAppChrome.html" Url="App/Views/layout/sharepointAppChrome.html" ReplaceContent="TRUE" />
   </Module>
 </Elements>

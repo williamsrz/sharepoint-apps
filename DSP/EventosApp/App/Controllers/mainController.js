@@ -9,12 +9,13 @@
     angular.module('eventosApp')
         .controller(controllerName,
                 ['$scope',
+                 '$log',
                  '$location',
                   MainController
                 ]);
 
     // definição do controller
-    function MainController($scope, $location) {
+    function MainController($scope, $log, $location) {
 
         $scope.titulo = "angular";
 
@@ -22,6 +23,7 @@
             $location.path("/eventos");
         };
 
+        $log.info('Controller [' + controllerName + '] carregado!');
     };
 
 }());

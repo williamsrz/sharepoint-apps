@@ -43,6 +43,7 @@
 
         function init() {
 
+
             // if valores não existem na querystring
             if (decodeURIComponent($.getQueryStringValue("SPHostUrl")) === "undefined") {
 
@@ -56,6 +57,8 @@
                 // salvo as informações no cookie
                 criarSharePointAppContext();
             }
+            
+            $log.info('Serviço [' + serviceName + '] carregado!');
         }
 
         // recupero as informações gravadas no cookie

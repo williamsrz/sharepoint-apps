@@ -14,5 +14,7 @@
     <ProjectItemFile Source="App\Services\SharePointContextService.js" Target="App\Services\" Type="ElementFile" />
     <ProjectItemFile Source="App\app.launcher.js" Target="App\" Type="ElementFile" />
     <ProjectItemFile Source="App\Controllers\LauncherController.js" Target="App\Controllers\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Controllers\SharePointAppChromeController.js" Target="App\Controllers\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Views\layout\sharepointAppChrome.html" Target="App\Views\layout\" Type="ElementFile" />
   </Files>
 </ProjectItem>
