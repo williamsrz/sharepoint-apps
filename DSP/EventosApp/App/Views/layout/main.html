@@ -1,11 +1,32 @@
-﻿<div>
-    <h2 class="text-center">{{ titulo }}</h2>
-    <ul>
-        <li ng-repeat="evento in eventos" ng-click="detalhar(evento)">
-            <strong>{{evento.titulo}}</strong><br />
-            de {{evento.inicio}} até {{evento.termino}}<br />
-            local: {{evento.local}}<br />
-            organizador: {{evento.organizador}}<br /><br />
-        </li>
-    </ul>
+﻿<div data-ng-include="'App/Views/layout/fullHeader.html'"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page-header text-center">
+                <h1 class="font-mon">{{ titulo }}</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-xs-12 efeito-hover" ng-repeat="evento in eventos" ng-click="detalhar(evento)">
+            <div class="panel panel-default evento-box" title="{{evento.titulo}}">
+                <!--<div class="panel-heading text-center">{{evento.titulo}}</div>-->
+
+                <div class="evento-box-bg" style="background-image:url('{{evento.banner}}')"></div>
+                <hr class="no-margin" />
+                <div class="padding-10">
+                    <div class="text-center font-mon">
+                        <h3 class="no-margin margin-bottom-10">{{evento.titulo}}</h3>
+                    </div>
+                    <div class="text-center font-mon">
+
+                        <i class="fa fa-calendar"></i> <span>{{evento.inicio}}</span>
+                        <i class="fa fa-map-marker margin-left-10"></i> <span>{{evento.local}}</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>

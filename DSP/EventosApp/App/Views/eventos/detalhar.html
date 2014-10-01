@@ -1,9 +1,73 @@
-﻿<div>
-    <h2>{{evento.titulo}}</h2>
-    <h4>de {{evento.inicio}} até {{evento.termino}}</h4>
-    local: {{evento.local}}<br />
-    organizador: {{evento.organizador}}<br />
-    <input type="submit" value="realizar inscrição" data-ng-click="inscricao(evento)" />
-
+﻿<div class="topo-detalhar-evento">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="">{{evento.titulo}}</h1>
+                <h2>{{evento.descricao}}</h2>
+                <hr />
+                
+                <div class="margin-top-20"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default evento-box-bg no-border" style="background-image:url('{{evento.banner}}')" title="{{evento.titulo}}">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<a href="#/eventos">voltar para lista de eventos</a>
+
+<div class="container">
+    <div class="row">
+        <!--<div class="col-md-12">
+            <div class="page-header">
+                <h1 class="font-mon">Detalhes do evento<small> / <a href="#/main">voltar para lista de eventos</a></small></h1>
+            </div>
+        </div>-->
+    </div>
+    <div class="row margin-top-60">
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="font-mon no-margin">
+                        Detalhes do evento
+                    </h4>
+                    <!--<p>{{evento.detalhamento}}</p>-->
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a mauris odio. Suspendisse eleifend nec felis faucibus ullamcorper. Donec ipsum neque, pretium eget dolor vitae, eleifend ultrices augue. Nullam dapibus tristique malesuada. Suspendisse turpis risus, fermentum ac volutpat eu, semper gravida augue. Donec euismod ac libero eget molestie. Nam bibendum fermentum semper.
+                    </p>
+                    <p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            <li>Proin in nisl porta, iaculis enim sit amet, egestas ante.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <ul>
+                            <li>Etiam et elit in nulla viverra rhoncus.</li>
+                            <li>Vivamus vestibulum odio ullamcorper dolor pretium posuere.</li>
+                            <li>Nam at nisi ut magna interdum tincidunt nec ut est.</li>
+                            <li>Duis eget lorem iaculis, finibus dui ut, mattis felis.</li>
+                        </ul>
+                    </p>
+
+                </div>
+            </div>
+            <div class="margin-top-20"></div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="no-margin font-mon">Organizado por: {{evento.organizador}}</h4>
+                </div>
+                <div class="panel-body">
+                    <h4 class="font-mon no-margin "><i class="fa fa-calendar"></i> {{evento.inicio}} até {{evento.termino}}</h4>
+                    <hr />
+                    <h4 class="font-mon no-margin margin-top-10"><i class="fa fa-map-marker"></i> {{evento.local}}</h4>
+                </div>
+            </div>
+            <a class="font-mon btn btn-success btn-inscricao btn-lg margin-top-10" role="button" data-ng-click="inscricao(evento)">REALIZAR MINHA INSCRIÇÃO</a>
+        </div>
+    </div>
+</div>

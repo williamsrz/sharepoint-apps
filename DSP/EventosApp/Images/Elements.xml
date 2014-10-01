@@ -3,5 +3,11 @@
   <Module Name="Images">
     <File Path="Images\AppIcon.png" Url="Images/AppIcon.png" ReplaceContent="TRUE" />
     <File Path="Images\banner\banner-topo.png" Url="Images/banner/banner-topo.png" ReplaceContent="TRUE" />
+    <File Path="Images\eventos\tdc.png" Url="Images/eventos/tdc.png" ReplaceContent="TRUE" />
+    <File Path="Images\eventos\almsummit2014.png" Url="Images/eventos/almsummit2014.png" ReplaceContent="TRUE" />
+    <File Path="Images\banner\tdc.png" Url="Images/banner/tdc.png" ReplaceContent="TRUE" />
+    <File Path="Images\eventos\treinamento-java.png" Url="Images/eventos/treinamento-java.png" ReplaceContent="TRUE" />
+    <File Path="Images\eventos\sharepointalm.png" Url="Images/eventos/sharepointalm.png" ReplaceContent="TRUE" />
+    <File Path="Images\estudando.png" Url="Images/estudando.png" ReplaceContent="TRUE" />
   </Module>
 </Elements>

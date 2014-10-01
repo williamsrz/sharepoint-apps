@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+
     <!-- css -->
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/App.css" rel="stylesheet" />
+    <link href="Content/font-awesome.css" rel="stylesheet" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,7 +29,7 @@
     <script src="Scripts/angular-cookies.js"></script>
     <script src="Scripts/angular-route.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
-
+    <script src="Scripts/moment-with-locales.js"></script>
     <!-- helpers -->
     <script src="App/Helpers/jquery.helpers.js"></script>
 
@@ -43,15 +47,10 @@
     <script src="App/Services/SharePointContextService.js"></script>
 </head>
 <body>
-    <!--<div data-ng-include="'App/Views/layout/sharepointAppChrome.html'"></div>-->
-    <div class="jumbotron">
-        <div class="container">
-            <h1 class="">Treinamentos, Cursos e Workshops</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        </div>
-    </div>
+    <div data-ng-include="'App/Views/layout/sharepointAppChrome.html'"></div>
+    
+    <div data-ng-view></div>
     <div class="container">
-        <div data-ng-view></div>
         <hr />
         <footer>
             <p>© #DescubraSharePoint 2014</p>
