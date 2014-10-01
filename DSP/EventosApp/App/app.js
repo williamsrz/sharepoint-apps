@@ -3,7 +3,9 @@
     // configuração do modulo para app
     var app = angular.module("eventosApp", [
         // dependencias
-        "ngRoute" // rotas
+        'ngResource', 
+        'ngRoute', // rotas
+        'ngCookies' // cookies
     ]);
 
 

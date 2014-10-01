@@ -2,7 +2,7 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="RootModule">
     <File Path="App\app.js" Url="App/app.js" ReplaceContent="TRUE" />
-    <File Path="App\Helpers\jquery-extensions.js" Url="App/Helpers/jquery-extensions.js" ReplaceContent="TRUE" />
+    <File Path="App\Helpers\jquery.helpers.js" Url="App/Helpers/jquery.helpers.js" ReplaceContent="TRUE" />
     <File Path="App\Controllers\mainController.js" Url="App/Controllers/mainController.js" ReplaceContent="TRUE" />
     <File Path="App\Controllers\ListarEventosController.js" Url="App/Controllers/ListarEventosController.js" ReplaceContent="TRUE" />
     <File Path="App\Services\eventosService.js" Url="App/Services/eventosService.js" ReplaceContent="TRUE" />
@@ -10,5 +10,8 @@
     <File Path="App\Views\layout\main.html" Url="App/Views/layout/main.html" ReplaceContent="TRUE" />
     <File Path="App\Views\eventos\detalhar.html" Url="App/Views/eventos/detalhar.html" ReplaceContent="TRUE" />
     <File Path="App\Controllers\DetalharEventosController.js" Url="App/Controllers/DetalharEventosController.js" ReplaceContent="TRUE" />
+    <File Path="App\Services\SharePointContextService.js" Url="App/Services/SharePointContextService.js" ReplaceContent="TRUE" />
+    <File Path="App\app.launcher.js" Url="App/app.launcher.js" ReplaceContent="TRUE" />
+    <File Path="App\Controllers\LauncherController.js" Url="App/Controllers/LauncherController.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

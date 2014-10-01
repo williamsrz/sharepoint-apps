@@ -7,7 +7,11 @@
 
     // configuração do serviço
     angular.module('eventosApp')
-        .factory(serviceName, EventosService);
+        .service(serviceName, [
+                '$http',
+                EventosService
+        ]);
+
 
     // definição do serviço
     function EventosService($http) {

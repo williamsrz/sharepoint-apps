@@ -49,15 +49,19 @@
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{c3b964f4-2772-4bdf-9842-76d0d7a587df}</SharePointProjectItemId>
     </None>
+    <Content Include="App\app.launcher.js" />
     <Content Include="App\Controllers\DetalharEventosController.js" />
     <Content Include="App\Controllers\ListarEventosController.js" />
+    <Content Include="App\Controllers\LauncherController.js" />
     <Content Include="App\Controllers\MainController.js" />
-    <Content Include="App\Helpers\jquery-extensions.js" />
+    <Content Include="App\Helpers\jquery.helpers.js" />
+    <Content Include="App\Services\SharePointContextService.js" />
     <Content Include="App\Services\EventosService.js" />
     <Content Include="App\Views\eventos\detalhar.html" />
     <Content Include="App\Views\eventos\listar.html" />
     <Content Include="App\Views\layout\main.html" />
     <Content Include="Elements.xml" />
+    <Content Include="Pages\launcher.html" />
     <Content Include="Pages\Elements.xml" />
     <None Include="Scripts\angular-cookies.min.js.map" />
     <None Include="Scripts\angular-resource.min.js.map" />
@@ -73,7 +77,7 @@
     <None Include="Scripts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{4e9ddb7c-7c8d-4e14-bccb-82ac0162c942}</SharePointProjectItemId>
     </None>
-    <Content Include="Pages\index.html" />
+    <Content Include="Pages\app.html" />
     <Content Include="Scripts\angular-cookies.js" />
     <Content Include="Scripts\angular-cookies.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
