@@ -4,10 +4,12 @@
 
     // serviço
     var serviceName = "EventosService"
-    angular
-        .module('eventosApp')
+
+    // configuração do serviço
+    angular.module('eventosApp')
         .factory(serviceName, EventosService);
 
+    // definição do serviço
     function EventosService($http) {
 
         var listarEventos = [
@@ -26,6 +28,14 @@
                     termino: '18/10/2014',
                     organizador: 'Global Code',
                     local: 'Porto Alegre'
+                },
+                {
+                    id: '3',
+                    titulo: 'Treinamento Java',
+                    inicio: '23/11/2014',
+                    termino: '10/12/2014',
+                    organizador: 'Arquitetura',
+                    local: 'Jundiai'
                 }
         ];
 

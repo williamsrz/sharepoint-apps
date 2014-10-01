@@ -1,11 +1,20 @@
 ﻿(function () {
+    'use strict';
 
     // controller
-    var controlerName = 'MainController';
+    var controllerName = 'MainController';
 
+
+    // configuração do controller 
+    angular.module('eventosApp')
+        .controller(controllerName,
+                ['$scope',
+                 '$location',
+                  MainController
+                ]);
 
     // definição do controller
-    var MainController = function ($scope, $location) {
+    function MainController($scope, $location) {
 
         $scope.titulo = "angular";
 
@@ -14,9 +23,5 @@
         };
 
     };
-
-    // adiciono controller 
-    angular.module('eventosApp')
-        .controller(controlerName, MainController);
 
 }());

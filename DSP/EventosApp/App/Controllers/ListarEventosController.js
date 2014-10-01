@@ -1,30 +1,22 @@
-﻿//(function () {
+﻿(function () {
+    'use strict';
 
-//    'use strict';
+    // nome controller
+    var controllerName = 'ListarEventosController';
 
-//    // Controller
-//    var controlerName = 'eventosController';
-
-//    angular
-//        .module('eventosApp')
-//        .controller(controlerName, ['$scope', 'eventosService', eventosController]);
-
-//    function eventosController($scope, eventosService) {
-//        $scope.eventos = eventosService.listar;
-
-        
-//    };
-
-//}());
-
-(function () {
-
-    // controller
-    var controlerName = 'ListarEventosController';
+    // configuração do controller 
+    angular.module('eventosApp')
+        .controller(controllerName,
+                ['$scope',
+                 '$location',
+                 '$routeParams',
+                 'EventosService',
+                  ListarEventosController
+                ]);
 
 
     // definição do controller
-    var ListarEventosController = function ($scope, $location, $routeParams, EventosService) {
+    function ListarEventosController($scope, $location, $routeParams, EventosService) {
 
         $scope.titulo = "Eventos em Destaque";
         $scope.eventos = EventosService.listar;
@@ -35,8 +27,5 @@
 
     };
 
-    // adiciono controller 
-    angular.module('eventosApp')
-        .controller(controlerName, ListarEventosController);
 
 }());

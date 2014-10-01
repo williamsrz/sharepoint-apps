@@ -1,7 +1,13 @@
 ﻿(function () {
 
-    var app = angular.module("eventosApp", ["ngRoute"]);
+    // configuração do modulo para app
+    var app = angular.module("eventosApp", [
+        // dependencias
+        "ngRoute" // rotas
+    ]);
 
+
+    // configuração de rotas
     app.config(function ($routeProvider) {
         $routeProvider
             .when("/main", {

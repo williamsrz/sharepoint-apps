@@ -1,13 +1,23 @@
 ﻿(function () {
+    'use strict';
 
-    // controller
-    var controlerName = 'DetalharEventosController';
+    // nome controller
+    var controllerName = 'DetalharEventosController';
 
+    // configuração do controller 
+    angular.module('eventosApp')
+        .controller(controllerName,
+                ['$scope',
+                 '$location',
+                 '$routeParams',
+                 'EventosService',
+                  DetalharEventosController
+                ]);
 
     // definição do controller
-    var DetalharEventosController = function ($scope, $location, $routeParams, EventosService) {
+    function DetalharEventosController($scope, $location, $routeParams, EventosService) {
 
-       var eventoId = $routeParams.id;
+        var eventoId = $routeParams.id;
 
         $scope.titulo = "Eventos em Destaque";
 
@@ -19,13 +29,7 @@
             if (confirmado) {
                 $location.path("/eventos");
             }
-
         };
-
     };
-
-    // adiciono controller 
-    angular.module('eventosApp')
-        .controller(controlerName, DetalharEventosController);
 
 }());
