@@ -2,9 +2,21 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" data-ng-app="eventosApp">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 
+    <!-- css -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/App.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <!-- libs -->
     <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="/_layouts/15/SP.UI.Controls.js"></script>
@@ -12,7 +24,7 @@
     <script src="Scripts/angular-resource.js"></script>
     <script src="Scripts/angular-cookies.js"></script>
     <script src="Scripts/angular-route.js"></script>
-
+    <script src="Scripts/bootstrap.min.js"></script>
 
     <!-- helpers -->
     <script src="App/Helpers/jquery.helpers.js"></script>
@@ -31,7 +43,19 @@
     <script src="App/Services/SharePointContextService.js"></script>
 </head>
 <body>
-    <div data-ng-include="'App/Views/layout/sharepointAppChrome.html'"></div>
-    <div data-ng-view></div>
+    <!--<div data-ng-include="'App/Views/layout/sharepointAppChrome.html'"></div>-->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="">Treinamentos, Cursos e Workshops</h1>
+            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div data-ng-view></div>
+        <hr />
+        <footer>
+            <p>© #DescubraSharePoint 2014</p>
+        </footer>
+    </div>
 </body>
 </html>

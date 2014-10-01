@@ -16,5 +16,9 @@
     <ProjectItemFile Source="App\Controllers\LauncherController.js" Target="App\Controllers\" Type="ElementFile" />
     <ProjectItemFile Source="App\Controllers\SharePointAppChromeController.js" Target="App\Controllers\" Type="ElementFile" />
     <ProjectItemFile Source="App\Views\layout\sharepointAppChrome.html" Target="App\Views\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\glyphicons-halflings-regular.woff" Target="fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\glyphicons-halflings-regular.ttf" Target="fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\glyphicons-halflings-regular.svg" Target="fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\glyphicons-halflings-regular.eot" Target="fonts\" Type="ElementFile" />
   </Files>
 </ProjectItem>

@@ -19,7 +19,7 @@
     // definição do controller
     function ListarEventosController($scope, $log, $location, $routeParams, EventosService) {
 
-        $scope.titulo = "Eventos em Destaque";
+        $scope.titulo = "Todos os Eventos";
         $scope.eventos = EventosService.listar;
 
         $scope.detalhar = function (evento) {

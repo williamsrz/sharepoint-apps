@@ -11,16 +11,18 @@
                 ['$scope',
                  '$log',
                  '$location',
+                 'EventosService',
                   MainController
                 ]);
 
     // definição do controller
-    function MainController($scope, $log, $location) {
+    function MainController($scope, $log, $location, EventosService) {
 
-        $scope.titulo = "angular";
+        $scope.titulo = "Eventos em Destaque";
+        $scope.eventos = EventosService.listar;
 
-        $scope.destaques = function () {
-            $location.path("/eventos");
+        $scope.detalhar = function (evento) {
+            $location.path("/eventos/detalhar/" + evento.id);
         };
 
         $log.info('Controller [' + controllerName + '] carregado!');
