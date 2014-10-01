@@ -4,9 +4,11 @@
     <File Path="App\app.js" Url="App/app.js" ReplaceContent="TRUE" />
     <File Path="App\Helpers\jquery-extensions.js" Url="App/Helpers/jquery-extensions.js" ReplaceContent="TRUE" />
     <File Path="App\Controllers\mainController.js" Url="App/Controllers/mainController.js" ReplaceContent="TRUE" />
-    <File Path="App\Controllers\eventosController.js" Url="App/Controllers/eventosController.js" ReplaceContent="TRUE" />
+    <File Path="App\Controllers\ListarEventosController.js" Url="App/Controllers/ListarEventosController.js" ReplaceContent="TRUE" />
     <File Path="App\Services\eventosService.js" Url="App/Services/eventosService.js" ReplaceContent="TRUE" />
     <File Path="App\Views\eventos\listar.html" Url="App/Views/eventos/listar.html" ReplaceContent="TRUE" />
-    <File Path="App\Views\layout\topo.html" Url="App/Views/layout/topo.html" ReplaceContent="TRUE" />
+    <File Path="App\Views\layout\main.html" Url="App/Views/layout/main.html" ReplaceContent="TRUE" />
+    <File Path="App\Views\eventos\detalhar.html" Url="App/Views/eventos/detalhar.html" ReplaceContent="TRUE" />
+    <File Path="App\Controllers\DetalharEventosController.js" Url="App/Controllers/DetalharEventosController.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

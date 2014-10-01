@@ -49,12 +49,14 @@
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{c3b964f4-2772-4bdf-9842-76d0d7a587df}</SharePointProjectItemId>
     </None>
-    <Content Include="App\Controllers\eventosController.js" />
-    <Content Include="App\Controllers\mainController.js" />
+    <Content Include="App\Controllers\DetalharEventosController.js" />
+    <Content Include="App\Controllers\ListarEventosController.js" />
+    <Content Include="App\Controllers\MainController.js" />
     <Content Include="App\Helpers\jquery-extensions.js" />
-    <Content Include="App\Services\eventosService.js" />
+    <Content Include="App\Services\EventosService.js" />
+    <Content Include="App\Views\eventos\detalhar.html" />
     <Content Include="App\Views\eventos\listar.html" />
-    <Content Include="App\Views\layout\topo.html" />
+    <Content Include="App\Views\layout\main.html" />
     <Content Include="Elements.xml" />
     <Content Include="Pages\Elements.xml" />
     <None Include="Scripts\angular-cookies.min.js.map" />

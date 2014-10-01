@@ -1,16 +1,22 @@
 ﻿(function () {
 
-    'use strict';
+    // controller
+    var controlerName = 'MainController';
 
-    // Controller
-    var controlerName = 'mainController';
 
-    angular
-        .module('eventosApp')
-        .controller(controlerName, ['$scope', mainController]);
+    // definição do controller
+    var MainController = function ($scope, $location) {
 
-    function mainController($scope) {
-        $scope.titulo = "Eventos em Destaque";
+        $scope.titulo = "angular";
+
+        $scope.destaques = function () {
+            $location.path("/eventos");
+        };
+
     };
+
+    // adiciono controller 
+    angular.module('eventosApp')
+        .controller(controlerName, MainController);
 
 }());

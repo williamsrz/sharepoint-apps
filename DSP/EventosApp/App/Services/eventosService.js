@@ -3,15 +3,16 @@
     'use strict';
 
     // serviço
-    var serviceName = "eventosService"
+    var serviceName = "EventosService"
     angular
         .module('eventosApp')
-        .factory(serviceName, eventosService);
+        .factory(serviceName, EventosService);
 
-    function eventosService($http) {
+    function EventosService($http) {
 
         var listarEventos = [
                 {
+                    id: '1',
                     titulo: 'Alm Summit Brasil 2014',
                     inicio: '29/08/2014',
                     termino: '30/09/2014',
@@ -19,6 +20,7 @@
                     local: 'Microsoft São Paulo'
                 },
                 {
+                    id: '2',
                     titulo: 'TDC 2014',
                     inicio: '16/10/2014',
                     termino: '18/10/2014',

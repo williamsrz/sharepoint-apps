@@ -4,10 +4,12 @@
     <ProjectItemFile Source="Elements.xml" Type="ElementManifest" />
     <ProjectItemFile Source="App\app.js" Target="App\" Type="ElementFile" />
     <ProjectItemFile Source="App\Helpers\jquery-extensions.js" Target="App\Helpers\" Type="ElementFile" />
-    <ProjectItemFile Source="App\Controllers\mainController.js" Target="App\Controllers\" Type="ElementFile" />
-    <ProjectItemFile Source="App\Controllers\eventosController.js" Target="App\Controllers\" Type="ElementFile" />
-    <ProjectItemFile Source="App\Services\eventosService.js" Target="App\Services\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Controllers\MainController.js" Target="App\Controllers\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Controllers\ListarEventosController.js" Target="App\Controllers\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Services\EventosService.js" Target="App\Services\" Type="ElementFile" />
     <ProjectItemFile Source="App\Views\eventos\listar.html" Target="App\Views\eventos\" Type="ElementFile" />
-    <ProjectItemFile Source="App\Views\layout\topo.html" Target="App\Views\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Views\layout\main.html" Target="App\Views\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Views\eventos\detalhar.html" Target="App\Views\eventos\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Controllers\DetalharEventosController.js" Target="App\Controllers\" Type="ElementFile" />
   </Files>
 </ProjectItem>
