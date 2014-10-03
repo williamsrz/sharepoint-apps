@@ -50,9 +50,15 @@
     <Content Include="App\Services\SharePointDataContextService.js" />
     <Content Include="App\Services\SharePointEventosService.js" />
     <Content Include="App\Views\layout\fullHeader.html" />
+    <Content Include="Data\EventosInscritos\Elements.xml" />
+    <Content Include="Data\EventosInscritos\EventosInscritosInstance\Elements.xml" />
+    <Content Include="Data\EventosInscritos\Schema.xml" />
     <Content Include="Data\Eventos\Elements.xml" />
     <Content Include="Data\Eventos\EventosInstance\Elements.xml" />
     <Content Include="Data\Eventos\Schema.xml" />
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
@@ -60,11 +66,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Data\EventosInscritos\EventosInscritosInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b1a40aff-bd07-4d6b-9207-17a1a7d78363}</SharePointProjectItemId>
+    </None>
+    <None Include="Data\EventosInscritos\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{90ee312e-1b1a-497a-ad7e-7b86147b7d25}</SharePointProjectItemId>
+    </None>
     <None Include="Data\Eventos\EventosInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{8d42b8e5-9bf0-40a2-8ae2-e870fed892af}</SharePointProjectItemId>
     </None>
     <None Include="Data\Eventos\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{c92145a5-7953-4c41-827c-d32129c0f433}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{40a4fc47-beb8-4037-8556-67c6e1ef703e}</FeatureId>
     </None>
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">

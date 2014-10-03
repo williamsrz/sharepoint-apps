@@ -41,7 +41,7 @@
                       displayName: "[LISTA] Eventos"
                   },
                   {
-                      linkUrl: "Lists/Inscricoes",
+                      linkUrl: "Lists/Inscritos",
                       displayName: "[LISTA] Inscrições"
                   }
                 ]

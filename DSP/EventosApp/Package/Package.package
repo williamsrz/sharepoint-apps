@@ -2,6 +2,6 @@
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="274c6154-9f1f-4eb0-8176-84dfdd4a9c62" solutionId="274c6154-9f1f-4eb0-8176-84dfdd4a9c62" resetWebServer="false" sharePointProductVersion="16.0" name="EventosApp" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <features>
     <featureReference itemId="4debab46-a685-41cd-b76a-eb9e3b8b36a9" />
-    <featureReference itemId="3fa70c89-95cb-47b1-aeaf-75b52577a92b" />
+    <featureReference itemId="40a4fc47-beb8-4037-8556-67c6e1ef703e" />
   </features>
 </package>
