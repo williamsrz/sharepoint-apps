@@ -36,30 +36,22 @@
 
         servico.hostWeb = spWeb;
 
-        // inicialização do serviço
-        init();
 
-        // construtor do serviço
+        // if valores não existem na querystring
+        if (decodeURIComponent($.getQueryStringValue("SPHostUrl")) === "undefined") {
 
-        function init() {
+            // carrego as informações do cookie 
+            obterSharePointAppContextCookie();
 
+            // atualização automatica do sharepoint security validation digest
+            atualizarSharePointSecurityValidationDigest();
 
-            // if valores não existem na querystring
-            if (decodeURIComponent($.getQueryStringValue("SPHostUrl")) === "undefined") {
-
-                // carrego as informações do cookie 
-                obterSharePointAppContextCookie();
-
-                // atualização automatica do sharepoint security validation digest
-                atualizarSharePointSecurityValidationDigest();
-
-            } else {
-                // salvo as informações no cookie
-                criarSharePointAppContext();
-            }
-            
-            $log.info('Serviço [' + serviceName + '] carregado!');
+        } else {
+            // salvo as informações no cookie
+            criarSharePointAppContext();
         }
+
+        $log.info('Serviço [' + serviceName + '] carregado!');
 
         // recupero as informações gravadas no cookie
         function obterSharePointAppContextCookie() {
@@ -87,18 +79,21 @@
             siteContextInfoResource.post({}, function (data) {
 
                 // recupero o security digest timeout e value & guardo no serviço
-                var validacaoRefreshTimeout = data.d.GetContextWebInformation.FormDigestTimeoutSeconds - 10;
+                var validacaoRefreshTimeout = data.d.GetContextWebInformation.FormDigestTimeoutSeconds - 5;
                 servico.securityValidation = data.d.GetContextWebInformation.FormDigestValue;
 
-                // repeat this in FormDigestTimeoutSeconds-10
+                // repeat this in FormDigestTimeoutSeconds-5
                 $timeout(function () {
+
+                    $log.error('Atualizando FormDigestValue');
+
                     atualizarSharePointSecurityValidationDigest();
-                }, validacaoRefreshTimeout * 1000);
+
+                }, validacaoRefreshTimeout * 100);
 
             }, function (error) {
-                
+                $log.error(error);
             });
-
 
         }
 
@@ -121,9 +116,6 @@
             // redireciono para a app
             $window.location.href = appWebUrl + '/app.html';
         }
-
-
-
     };
 
 }());

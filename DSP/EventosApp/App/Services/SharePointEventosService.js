@@ -25,23 +25,19 @@
     function SharePointEventosService($log, $http, $resource, $q, SharePointContextService) {
 
         var servico = this;
-        var hostWeb = SharePointContextService.hostWeb;
-
+        servico.hostWeb = SharePointContextService.hostWeb;
 
         $log.info('Serviço [' + serviceName + '] carregado!');
-
 
         // recupero todos os eventos
         function listarEventos($scope) {
 
             var deferred = $q.defer();
 
-            var hostweburl = hostWeb.url;
-            var appweburl = hostWeb.appWebUrl;
 
             $http({
                 method: 'GET',
-                url: appweburl + "/_api/web/lists/getByTitle('Eventos')/items?$select=ID,Title,Inicio,Local,Banner", //Termino,Organizador,Local,Banner,Descricao,Detalhes
+                url: servico.hostWeb.appWebUrl + "/_api/web/lists/getByTitle('Eventos')/items?$select=ID,Title,Inicio,Local,Banner", //Termino,Organizador,Local,Banner,Descricao,Detalhes
                 headers: { "Accept": "application/json;odata=verbose" }
             })
                 .success(function (data, status, headers, config) {
@@ -69,21 +65,17 @@
                     alert(status);
                 });
 
-
             return deferred.promise;
         };
 
-
+        // recupero um evento
         function detalharEvento($scope, id) {
 
             var deferred = $q.defer();
 
-            var hostweburl = hostWeb.url;
-            var appweburl = hostWeb.appWebUrl;
-
             $http({
                 method: 'GET',
-                url: appweburl + "/_api/web/lists/getByTitle('Eventos')/items(" + id + ")?$select=ID,Title,Inicio,Local,Termino,Organizador,Local,Banner,Descricao,Detalhes",
+                url: servico.hostWeb.appWebUrl + "/_api/web/lists/getByTitle('Eventos')/items(" + id + ")?$select=ID,Title,Inicio,Local,Termino,Organizador,Local,Banner,Descricao,Detalhes",
                 headers: { "Accept": "application/json;odata=verbose" }
             })
                 .success(function (data, status, headers, config) {
@@ -115,7 +107,7 @@
         // assinatura do serviço
         return {
             listar: listarEventos,
-            detalhar: detalharEvento
+            detalhar: detalharEvento,
         };
 
     };

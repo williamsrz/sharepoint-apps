@@ -11,21 +11,37 @@
                 ['$scope',
                  '$log',
                  '$location',
-                 'SharePointEventosService',
+                 'SharePointDataContextService',
                   MainController
                 ]);
 
     // definição do controller
-    function MainController($scope, $log, $location, SharePointEventosService) {
+    function MainController($scope, $log, $location, SharePointDataContextService) {
 
         $scope.titulo = "Eventos em Destaque";
-        $scope.eventos = [];
+       
 
         $scope.detalhar = function (evento) {
             $location.path("/eventos/detalhar/" + evento.id);
         };
 
-        SharePointEventosService.listar($scope);
+        //SharePointEventosService.listar($scope);
+        $scope.eventos = [];
+        SharePointDataContextService.listar().then(function (result) {
+           
+            angular.forEach(result, function (item) {
+
+                var evento = {
+                    id: item.ID,
+                    titulo: item.Title,
+                    inicio: item.Inicio,
+                    local: item.Local,
+                    banner: item.Banner.Url,
+                }
+
+                $scope.eventos.push(evento);
+            });
+        });
        
         $log.info('Controller [' + controllerName + '] carregado!');
     };
