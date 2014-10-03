@@ -11,20 +11,22 @@
                 ['$scope',
                  '$log',
                  '$location',
-                 'EventosService',
+                 'SharePointEventosService',
                   MainController
                 ]);
 
     // definição do controller
-    function MainController($scope, $log, $location, EventosService) {
+    function MainController($scope, $log, $location, SharePointEventosService) {
 
         $scope.titulo = "Eventos em Destaque";
-        $scope.eventos = EventosService.listar;
+        $scope.eventos = [];
 
         $scope.detalhar = function (evento) {
             $location.path("/eventos/detalhar/" + evento.id);
         };
 
+        SharePointEventosService.listar($scope);
+       
         $log.info('Controller [' + controllerName + '] carregado!');
     };
 

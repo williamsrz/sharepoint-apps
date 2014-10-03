@@ -11,18 +11,18 @@
                  '$log',
                  '$location',
                  '$routeParams',
-                 'EventosService',
+                 'SharePointEventosService',
                   DetalharEventosController
                 ]);
 
     // definição do controller
-    function DetalharEventosController($scope, $log, $location, $routeParams, EventosService) {
+    function DetalharEventosController($scope, $log, $location, $routeParams, SharePointEventosService) {
 
         var eventoId = $routeParams.id;
 
         $scope.titulo = "Eventos em Destaque";
 
-        $scope.evento = EventosService.listar[eventoId - 1];
+        $scope.evento = SharePointEventosService.detalhar($scope, eventoId);
 
         $scope.inscricao = function (evento) {
             var confirmado = confirm('Confirma sua inscrição no evento ' + evento.titulo + '?');

@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Eventos" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/Eventos" Description="">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Alm Summit Brasil 2014</Field>
+          <Field Name="Descricao">Realizado anualmente desde 2011, o ALM Summit Brasil é o principal evento do país.</Field>
+          <Field Name="Inicio">2014-08-29T08:00:00Z</Field>
+          <Field Name="Termino">2014-08-30T08:00:00Z</Field>
+          <Field Name="Local">Microsoft São Paulo</Field>
+          <Field Name="Banner">https://descubrasharepoint-7cb14b777b5d35.sharepoint.com/sites/dev/tcw/images/eventos/almsummit2014.png</Field>
+          <Field Name="Organizador">Lambda3</Field>
+          <Field Name="Detalhes"><![CDATA[
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a mauris odio. Suspendisse eleifend nec felis faucibus ullamcorper. Donec ipsum neque, pretium eget dolor vitae, eleifend ultrices augue. Nullam dapibus tristique malesuada. Suspendisse turpis risus, fermentum ac volutpat eu, semper gravida augue. Donec euismod ac libero eget molestie. Nam bibendum fermentum semper.
+            </p>
+            <p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Proin in nisl porta, iaculis enim sit amet, egestas ante.</li>
+              </ul>
+            </p>
+            <p>
+              <ul>
+                <li>Etiam et elit in nulla viverra rhoncus.</li>
+                <li>Vivamus vestibulum odio ullamcorper dolor pretium posuere.</li>
+                <li>Nam at nisi ut magna interdum tincidunt nec ut est.</li>
+                <li>Duis eget lorem iaculis, finibus dui ut, mattis felis.</li>
+              </ul>
+            </p>]]></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Alm Summit Brasil 2014</Field>
+          <Field Name="Descricao">Realizado anualmente desde 2011, o ALM Summit Brasil é o principal evento do país.</Field>
+          <Field Name="Inicio">2014-08-29T08:00:00Z</Field>
+          <Field Name="Termino">2014-08-30T08:00:00Z</Field>
+          <Field Name="Local">Microsoft São Paulo</Field>
+          <Field Name="Banner">https://descubrasharepoint-7cb14b777b5d35.sharepoint.com/sites/dev/tcw/images/eventos/almsummit2014.png</Field>
+          <Field Name="Organizador">Lambda3</Field>
+          <Field Name="Detalhes">
+            <![CDATA[
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a mauris odio. Suspendisse eleifend nec felis faucibus ullamcorper. Donec ipsum neque, pretium eget dolor vitae, eleifend ultrices augue. Nullam dapibus tristique malesuada. Suspendisse turpis risus, fermentum ac volutpat eu, semper gravida augue. Donec euismod ac libero eget molestie. Nam bibendum fermentum semper.
+            </p>
+            <p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Proin in nisl porta, iaculis enim sit amet, egestas ante.</li>
+              </ul>
+            </p>
+            <p>
+              <ul>
+                <li>Etiam et elit in nulla viverra rhoncus.</li>
+                <li>Vivamus vestibulum odio ullamcorper dolor pretium posuere.</li>
+                <li>Nam at nisi ut magna interdum tincidunt nec ut est.</li>
+                <li>Duis eget lorem iaculis, finibus dui ut, mattis felis.</li>
+              </ul>
+            </p>]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Alm Summit Brasil 2014</Field>
+          <Field Name="Descricao">Realizado anualmente desde 2011, o ALM Summit Brasil é o principal evento do país.</Field>
+          <Field Name="Inicio">2014-08-29T08:00:00Z</Field>
+          <Field Name="Termino">2014-08-30T08:00:00Z</Field>
+          <Field Name="Local">Microsoft São Paulo</Field>
+          <Field Name="Banner">https://descubrasharepoint-7cb14b777b5d35.sharepoint.com/sites/dev/tcw/images/eventos/almsummit2014.png</Field>
+          <Field Name="Organizador">Lambda3</Field>
+          <Field Name="Detalhes">
+            <![CDATA[
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a mauris odio. Suspendisse eleifend nec felis faucibus ullamcorper. Donec ipsum neque, pretium eget dolor vitae, eleifend ultrices augue. Nullam dapibus tristique malesuada. Suspendisse turpis risus, fermentum ac volutpat eu, semper gravida augue. Donec euismod ac libero eget molestie. Nam bibendum fermentum semper.
+            </p>
+            <p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Proin in nisl porta, iaculis enim sit amet, egestas ante.</li>
+              </ul>
+            </p>
+            <p>
+              <ul>
+                <li>Etiam et elit in nulla viverra rhoncus.</li>
+                <li>Vivamus vestibulum odio ullamcorper dolor pretium posuere.</li>
+                <li>Nam at nisi ut magna interdum tincidunt nec ut est.</li>
+                <li>Duis eget lorem iaculis, finibus dui ut, mattis felis.</li>
+              </ul>
+            </p>]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Alm Summit Brasil 2014</Field>
+          <Field Name="Descricao">Realizado anualmente desde 2011, o ALM Summit Brasil é o principal evento do país.</Field>
+          <Field Name="Inicio">2014-08-29T08:00:00Z</Field>
+          <Field Name="Termino">2014-08-30T08:00:00Z</Field>
+          <Field Name="Local">Microsoft São Paulo</Field>
+          <Field Name="Banner">https://descubrasharepoint-7cb14b777b5d35.sharepoint.com/sites/dev/tcw/images/eventos/almsummit2014.png</Field>
+          <Field Name="Organizador">Lambda3</Field>
+          <Field Name="Detalhes">
+            <![CDATA[
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a mauris odio. Suspendisse eleifend nec felis faucibus ullamcorper. Donec ipsum neque, pretium eget dolor vitae, eleifend ultrices augue. Nullam dapibus tristique malesuada. Suspendisse turpis risus, fermentum ac volutpat eu, semper gravida augue. Donec euismod ac libero eget molestie. Nam bibendum fermentum semper.
+            </p>
+            <p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Proin in nisl porta, iaculis enim sit amet, egestas ante.</li>
+              </ul>
+            </p>
+            <p>
+              <ul>
+                <li>Etiam et elit in nulla viverra rhoncus.</li>
+                <li>Vivamus vestibulum odio ullamcorper dolor pretium posuere.</li>
+                <li>Nam at nisi ut magna interdum tincidunt nec ut est.</li>
+                <li>Duis eget lorem iaculis, finibus dui ut, mattis felis.</li>
+              </ul>
+            </p>]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Alm Summit Brasil 2014</Field>
+          <Field Name="Descricao">Realizado anualmente desde 2011, o ALM Summit Brasil é o principal evento do país.</Field>
+          <Field Name="Inicio">2014-08-29T08:00:00Z</Field>
+          <Field Name="Termino">2014-08-30T08:00:00Z</Field>
+          <Field Name="Local">Microsoft São Paulo</Field>
+          <Field Name="Banner">https://descubrasharepoint-7cb14b777b5d35.sharepoint.com/sites/dev/tcw/images/eventos/almsummit2014.png</Field>
+          <Field Name="Organizador">Lambda3</Field>
+          <Field Name="Detalhes">
+            <![CDATA[
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a mauris odio. Suspendisse eleifend nec felis faucibus ullamcorper. Donec ipsum neque, pretium eget dolor vitae, eleifend ultrices augue. Nullam dapibus tristique malesuada. Suspendisse turpis risus, fermentum ac volutpat eu, semper gravida augue. Donec euismod ac libero eget molestie. Nam bibendum fermentum semper.
+            </p>
+            <p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Proin in nisl porta, iaculis enim sit amet, egestas ante.</li>
+              </ul>
+            </p>
+            <p>
+              <ul>
+                <li>Etiam et elit in nulla viverra rhoncus.</li>
+                <li>Vivamus vestibulum odio ullamcorper dolor pretium posuere.</li>
+                <li>Nam at nisi ut magna interdum tincidunt nec ut est.</li>
+                <li>Duis eget lorem iaculis, finibus dui ut, mattis felis.</li>
+              </ul>
+            </p>]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Alm Summit Brasil 2014</Field>
+          <Field Name="Descricao">Realizado anualmente desde 2011, o ALM Summit Brasil é o principal evento do país.</Field>
+          <Field Name="Inicio">2014-08-29T08:00:00Z</Field>
+          <Field Name="Termino">2014-08-30T08:00:00Z</Field>
+          <Field Name="Local">Microsoft São Paulo</Field>
+          <Field Name="Banner">https://descubrasharepoint-7cb14b777b5d35.sharepoint.com/sites/dev/tcw/images/eventos/almsummit2014.png</Field>
+          <Field Name="Organizador">Lambda3</Field>
+          <Field Name="Detalhes">
+            <![CDATA[
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a mauris odio. Suspendisse eleifend nec felis faucibus ullamcorper. Donec ipsum neque, pretium eget dolor vitae, eleifend ultrices augue. Nullam dapibus tristique malesuada. Suspendisse turpis risus, fermentum ac volutpat eu, semper gravida augue. Donec euismod ac libero eget molestie. Nam bibendum fermentum semper.
+            </p>
+            <p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Proin in nisl porta, iaculis enim sit amet, egestas ante.</li>
+              </ul>
+            </p>
+            <p>
+              <ul>
+                <li>Etiam et elit in nulla viverra rhoncus.</li>
+                <li>Vivamus vestibulum odio ullamcorper dolor pretium posuere.</li>
+                <li>Nam at nisi ut magna interdum tincidunt nec ut est.</li>
+                <li>Duis eget lorem iaculis, finibus dui ut, mattis felis.</li>
+              </ul>
+            </p>]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Alm Summit Brasil 2014</Field>
+          <Field Name="Descricao">Realizado anualmente desde 2011, o ALM Summit Brasil é o principal evento do país.</Field>
+          <Field Name="Inicio">2014-08-29T08:00:00Z</Field>
+          <Field Name="Termino">2014-08-30T08:00:00Z</Field>
+          <Field Name="Local">Microsoft São Paulo</Field>
+          <Field Name="Banner">https://descubrasharepoint-7cb14b777b5d35.sharepoint.com/sites/dev/tcw/images/eventos/almsummit2014.png</Field>
+          <Field Name="Organizador">Lambda3</Field>
+          <Field Name="Detalhes">
+            <![CDATA[
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a mauris odio. Suspendisse eleifend nec felis faucibus ullamcorper. Donec ipsum neque, pretium eget dolor vitae, eleifend ultrices augue. Nullam dapibus tristique malesuada. Suspendisse turpis risus, fermentum ac volutpat eu, semper gravida augue. Donec euismod ac libero eget molestie. Nam bibendum fermentum semper.
+            </p>
+            <p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Proin in nisl porta, iaculis enim sit amet, egestas ante.</li>
+              </ul>
+            </p>
+            <p>
+              <ul>
+                <li>Etiam et elit in nulla viverra rhoncus.</li>
+                <li>Vivamus vestibulum odio ullamcorper dolor pretium posuere.</li>
+                <li>Nam at nisi ut magna interdum tincidunt nec ut est.</li>
+                <li>Duis eget lorem iaculis, finibus dui ut, mattis felis.</li>
+              </ul>
+            </p>]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Alm Summit Brasil 2014</Field>
+          <Field Name="Descricao">Realizado anualmente desde 2011, o ALM Summit Brasil é o principal evento do país.</Field>
+          <Field Name="Inicio">2014-08-29T08:00:00Z</Field>
+          <Field Name="Termino">2014-08-30T08:00:00Z</Field>
+          <Field Name="Local">Microsoft São Paulo</Field>
+          <Field Name="Banner">https://descubrasharepoint-7cb14b777b5d35.sharepoint.com/sites/dev/tcw/images/eventos/almsummit2014.png</Field>
+          <Field Name="Organizador">Lambda3</Field>
+          <Field Name="Detalhes">
+            <![CDATA[
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a mauris odio. Suspendisse eleifend nec felis faucibus ullamcorper. Donec ipsum neque, pretium eget dolor vitae, eleifend ultrices augue. Nullam dapibus tristique malesuada. Suspendisse turpis risus, fermentum ac volutpat eu, semper gravida augue. Donec euismod ac libero eget molestie. Nam bibendum fermentum semper.
+            </p>
+            <p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Proin in nisl porta, iaculis enim sit amet, egestas ante.</li>
+              </ul>
+            </p>
+            <p>
+              <ul>
+                <li>Etiam et elit in nulla viverra rhoncus.</li>
+                <li>Vivamus vestibulum odio ullamcorper dolor pretium posuere.</li>
+                <li>Nam at nisi ut magna interdum tincidunt nec ut est.</li>
+                <li>Duis eget lorem iaculis, finibus dui ut, mattis felis.</li>
+              </ul>
+            </p>]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Alm Summit Brasil 2014</Field>
+          <Field Name="Descricao">Realizado anualmente desde 2011, o ALM Summit Brasil é o principal evento do país.</Field>
+          <Field Name="Inicio">2014-08-29T08:00:00Z</Field>
+          <Field Name="Termino">2014-08-30T08:00:00Z</Field>
+          <Field Name="Local">Microsoft São Paulo</Field>
+          <Field Name="Banner">https://descubrasharepoint-7cb14b777b5d35.sharepoint.com/sites/dev/tcw/images/eventos/almsummit2014.png</Field>
+          <Field Name="Organizador">Lambda3</Field>
+          <Field Name="Detalhes">
+            <![CDATA[
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a mauris odio. Suspendisse eleifend nec felis faucibus ullamcorper. Donec ipsum neque, pretium eget dolor vitae, eleifend ultrices augue. Nullam dapibus tristique malesuada. Suspendisse turpis risus, fermentum ac volutpat eu, semper gravida augue. Donec euismod ac libero eget molestie. Nam bibendum fermentum semper.
+            </p>
+            <p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Proin in nisl porta, iaculis enim sit amet, egestas ante.</li>
+              </ul>
+            </p>
+            <p>
+              <ul>
+                <li>Etiam et elit in nulla viverra rhoncus.</li>
+                <li>Vivamus vestibulum odio ullamcorper dolor pretium posuere.</li>
+                <li>Nam at nisi ut magna interdum tincidunt nec ut est.</li>
+                <li>Duis eget lorem iaculis, finibus dui ut, mattis felis.</li>
+              </ul>
+            </p>]]>
+          </Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

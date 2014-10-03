@@ -26,5 +26,6 @@
     <ProjectItemFile Source="fonts\fontawesome-webfont.eot" Target="fonts\" Type="ElementFile" />
     <ProjectItemFile Source="fonts\FontAwesome.otf" Target="fonts\" Type="ElementFile" />
     <ProjectItemFile Source="App\Views\layout\fullHeader.html" Target="App\Views\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Services\SharePointEventosService.js" Target="App\Services\" Type="ElementFile" />
   </Files>
 </ProjectItem>

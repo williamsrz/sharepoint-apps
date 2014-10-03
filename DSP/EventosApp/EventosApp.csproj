@@ -47,7 +47,11 @@
   <ItemGroup>
     <None Include="Content\bootstrap-theme.css.map" />
     <None Include="Content\bootstrap.css.map" />
+    <Content Include="App\Services\SharePointEventosService.js" />
     <Content Include="App\Views\layout\fullHeader.html" />
+    <Content Include="Data\Eventos\Elements.xml" />
+    <Content Include="Data\Eventos\EventosInstance\Elements.xml" />
+    <Content Include="Data\Eventos\Schema.xml" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
@@ -55,6 +59,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Data\Eventos\EventosInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8d42b8e5-9bf0-40a2-8ae2-e870fed892af}</SharePointProjectItemId>
+    </None>
+    <None Include="Data\Eventos\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c92145a5-7953-4c41-827c-d32129c0f433}</SharePointProjectItemId>
+    </None>
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{c3b964f4-2772-4bdf-9842-76d0d7a587df}</SharePointProjectItemId>
@@ -83,8 +93,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\estudando.png" />
     <Content Include="Images\eventos\almsummit2014.png" />
-    <Content Include="Images\banner\banner-topo.png" />
-    <Content Include="Images\banner\tdc.png" />
     <Content Include="Images\eventos\sharepointalm.png" />
     <Content Include="Images\eventos\treinamento-java.png" />
     <Content Include="Images\eventos\tdc.png" />

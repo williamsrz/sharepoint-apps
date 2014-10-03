@@ -3,10 +3,8 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="Images\" Type="ElementManifest" />
     <ProjectItemFile Source="AppIcon.png" Target="Images\" Type="ElementFile" />
-    <ProjectItemFile Source="banner\banner-topo.png" Target="Images\banner\" Type="ElementFile" />
     <ProjectItemFile Source="eventos\tdc.png" Target="Images\eventos\" Type="ElementFile" />
     <ProjectItemFile Source="eventos\almsummit2014.png" Target="Images\eventos\" Type="ElementFile" />
-    <ProjectItemFile Source="banner\tdc.png" Target="Images\banner\" Type="ElementFile" />
     <ProjectItemFile Source="eventos\treinamento-java.png" Target="Images\eventos\" Type="ElementFile" />
     <ProjectItemFile Source="eventos\sharepointalm.png" Target="Images\eventos\" Type="ElementFile" />
     <ProjectItemFile Source="estudando.png" Target="Images\" Type="ElementFile" />
