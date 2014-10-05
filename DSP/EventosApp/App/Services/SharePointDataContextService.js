@@ -74,9 +74,10 @@
             var restUrl = dataContextService.hostWeb.appWebUrl + "/_api/web/lists/getbytitle('Inscritos')/items";
             $http.post(restUrl, {
                 __metadata: {
-                    type: "SP.Data." + "Inscritos" + "ListItem"
+                    type: "SP.Data." + "EventosInscritos" + "ListItem"
                 },
-                Title: evento.titulo
+                Title: evento.titulo,
+                EventoId: evento.id //+ ";#" + evento.titulo
             }).success(function (data) {
                 dfd.resolve(data.d);
             }).error(function (data) {

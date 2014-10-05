@@ -16,7 +16,6 @@
       <ContentTypeRef ID="0x0120" />
     </ContentTypes>
     <Fields>
-
       <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" Hidden="TRUE" />
       <Field Name="Evento" ID="{fe9df3ab-8092-4778-b90b-9544e830d7bb}" DisplayName="Evento" Type="Lookup" Required="TRUE" List="Lists/Eventos" ShowField="Title" />
     </Fields>
