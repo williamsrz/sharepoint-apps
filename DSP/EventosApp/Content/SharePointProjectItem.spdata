@@ -13,5 +13,6 @@
     <ProjectItemFile Source="font-awesome.css" Target="Content\" Type="ElementFile" />
     <ProjectItemFile Source="sweet-alert.css" Target="Content\" Type="ElementFile" />
     <ProjectItemFile Source="sweet-alert.scss" Target="Content\" Type="ElementFile" />
+    <ProjectItemFile Source="animate.css" Target="Content\" Type="ElementFile" />
   </Files>
 </ProjectItem>

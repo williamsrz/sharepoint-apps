@@ -52,6 +52,7 @@
     <Content Include="App\Services\SharePointDataContextService.js" />
     <Content Include="App\Services\SharePointEventosService.js" />
     <Content Include="App\Views\layout\fullHeader.html" />
+    <Content Include="Content\animate.css" />
     <Content Include="Content\sweet-alert.css" />
     <Content Include="Data\EventosInscritos\Elements.xml" />
     <Content Include="Data\EventosInscritos\EventosInscritosInstance\Elements.xml" />

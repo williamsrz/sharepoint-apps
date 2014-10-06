@@ -12,9 +12,11 @@
 
     <!-- css -->
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/App.css" rel="stylesheet" />
     <link href="Content/font-awesome.css" rel="stylesheet" />
     <link href="Content/sweet-alert.css" rel="stylesheet" />
+    <link href="Content/animate.css" rel="stylesheet" />
+    <link href="Content/App.css" rel="stylesheet" />
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,7 +39,7 @@
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/moment-with-locales.js"></script>
     <script src="Scripts/sweet-alert.min.js"></script>
-    
+
     <!-- helpers -->
     <script src="App/Helpers/jquery.helpers.js"></script>
 
@@ -60,8 +62,7 @@
 </head>
 <body>
     <div data-ng-include="'App/Views/layout/sharepointAppChrome.html'"></div>
-
-    <div data-ng-view></div>
+    <div data-ng-view class="view-container"></div>
     <div class="container">
         <hr />
         <footer>

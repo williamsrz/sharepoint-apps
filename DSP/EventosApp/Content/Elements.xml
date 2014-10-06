@@ -12,5 +12,6 @@
     <File Path="Content\font-awesome.css" Url="Content/font-awesome.css" ReplaceContent="TRUE" />
     <File Path="Content\sweet-alert.css" Url="Content/sweet-alert.css" ReplaceContent="TRUE" />
     <File Path="Content\sweet-alert.scss" Url="Content/sweet-alert.scss" ReplaceContent="TRUE" />
+    <File Path="Content\animate.css" Url="Content/animate.css" ReplaceContent="TRUE" />
   </Module>
 </Elements>
