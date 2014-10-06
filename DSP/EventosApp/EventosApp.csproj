@@ -50,6 +50,7 @@
     <Content Include="App\Services\SharePointDataContextService.js" />
     <Content Include="App\Services\SharePointEventosService.js" />
     <Content Include="App\Views\layout\fullHeader.html" />
+    <Content Include="Content\sweet-alert.css" />
     <Content Include="Data\EventosInscritos\Elements.xml" />
     <Content Include="Data\EventosInscritos\EventosInscritosInstance\Elements.xml" />
     <Content Include="Data\EventosInscritos\Schema.xml" />
@@ -66,6 +67,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Content\sweet-alert.scss" />
     <None Include="Data\EventosInscritos\EventosInscritosInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{b1a40aff-bd07-4d6b-9207-17a1a7d78363}</SharePointProjectItemId>
     </None>
@@ -151,6 +153,8 @@
     <Content Include="Scripts\moment-with-locales.min.js" />
     <Content Include="Scripts\moment.js" />
     <Content Include="Scripts\moment.min.js" />
+    <Content Include="Scripts\sweet-alert.js" />
+    <Content Include="Scripts\sweet-alert.min.js" />
     <Content Include="Scripts\_references.js" />
   </ItemGroup>
   <ItemGroup>

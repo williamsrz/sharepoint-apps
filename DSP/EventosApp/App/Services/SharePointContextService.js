@@ -85,7 +85,7 @@
                 // repeat this in FormDigestTimeoutSeconds-5
                 $timeout(function () {
 
-                    $log.error('Atualizando FormDigestValue');
+                    $log.info('Atualizando FormDigestValue');
 
                     atualizarSharePointSecurityValidationDigest();
 

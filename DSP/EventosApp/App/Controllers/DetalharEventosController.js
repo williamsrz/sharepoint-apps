@@ -42,12 +42,19 @@
         });
 
         $scope.inscricao = function (evento) {
-
-            SharePointDataContextService.increver(evento).then(function (item) {
-                $log.info(item.ID);
-            });
+            SharePointDataContextService.increver(evento).then(efetuarInscricao, erro);
         };
 
+        function efetuarInscricao(data) {
+            //$log.info(data.ID);
+            var texto = "A sua inscrição no evento " + data.Title + " foi realizada com sucesso!"
+            swal({ title: "Parabéns", text: texto, type: "success", confirmButtonText: "Legal" });
+        };
+
+        function erro(reason) {
+            swal({ title: "OPS!", text: reason, type: "error", confirmButtonText: "Que pena!" });
+        }
+        
         $log.info('Controller [' + controllerName + '] carregado!');
     };
 

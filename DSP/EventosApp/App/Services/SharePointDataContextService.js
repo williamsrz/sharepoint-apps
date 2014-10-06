@@ -71,13 +71,15 @@
             $http.defaults.headers.post['X-HTTP-Method'] = "";
             $http.defaults.headers.post['X-RequestDigest'] = SharePointContextService.securityValidation;
 
-            var restUrl = dataContextService.hostWeb.appWebUrl + "/_api/web/lists/getbytitle('Inscritos')/items";
+            var query = "?$select=ID,Title,Inicio,Local,Termino,Organizador,Local,Banner,Descricao,Detalhes";
+            var restUrl = dataContextService.hostWeb.appWebUrl + "/_api/web/lists/getbytitle('Inscritos')/items" + query;
+
             $http.post(restUrl, {
                 __metadata: {
                     type: "SP.Data." + "EventosInscritos" + "ListItem"
                 },
                 Title: evento.titulo,
-                EventoId: evento.id //+ ";#" + evento.titulo
+                EventoId: evento.id 
             }).success(function (data) {
                 dfd.resolve(data.d);
             }).error(function (data) {
