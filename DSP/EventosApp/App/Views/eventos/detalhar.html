@@ -38,9 +38,7 @@
                         Detalhes do Evento
                     </h4>
                 </div>
-                <div class="panel-body">
-                    {{evento.detalhes}}
-                </div>
+                <div class="panel-body" data-ng-bind-html="evento.detalhes"></div>
             </div>
             <div class="margin-top-20"></div>
         </div>
@@ -55,7 +53,19 @@
                     <h4 class="font-mon no-margin"><i class="fa fa-map-marker"></i> {{evento.local}}</h4>
                 </div>
             </div>
-            <a class="font-mon btn btn-success btn-inscricao btn-lg margin-top-10" role="button" data-ng-click="inscricao(evento)">REALIZAR MINHA INSCRIÇÃO</a>
+            <div>
+            </div>
+            <div ng-switch="inscrito">
+                <form ng-switch-when="true">
+                    <a class="font-mon btn btn-danger btn-inscricao btn-lg margin-top-10"
+                       role="button" data-ng-click="efetuarInscricao(evento)">CANCELAR MINHA INSCRIÇÃO</a>
+                </form>
+                <div ng-switch-default>
+                    <a class="font-mon btn btn-success btn-inscricao btn-lg margin-top-10"
+                       role="button" data-ng-click="efetuarInscricao(evento)">REALIZAR MINHA INSCRIÇÃO</a>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

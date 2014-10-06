@@ -66,33 +66,10 @@
             return dfd.promise;
         };
 
-        function inscreverEmEvento(evento) {
-            var dfd = $q.defer();
-            $http.defaults.headers.post['X-HTTP-Method'] = "";
-            $http.defaults.headers.post['X-RequestDigest'] = SharePointContextService.securityValidation;
-
-            var query = "?$select=ID,Title,Inicio,Local,Termino,Organizador,Local,Banner,Descricao,Detalhes";
-            var restUrl = dataContextService.hostWeb.appWebUrl + "/_api/web/lists/getbytitle('Inscritos')/items" + query;
-
-            $http.post(restUrl, {
-                __metadata: {
-                    type: "SP.Data." + "EventosInscritos" + "ListItem"
-                },
-                Title: evento.titulo,
-                EventoId: evento.id 
-            }).success(function (data) {
-                dfd.resolve(data.d);
-            }).error(function (data) {
-                dfd.reject("Erro ao efeutar inscrição!");
-            });
-            return dfd.promise;
-        };
-
         // assinatura do serviço
         return {
             listar: listarEventos,
-            detalhar: detalharEvento,
-            increver: inscreverEmEvento
+            detalhar: detalharEvento
         };
 
     };

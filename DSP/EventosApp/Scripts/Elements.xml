@@ -29,5 +29,8 @@
     <File Path="Scripts\moment.js" Url="Scripts/moment.js" ReplaceContent="TRUE" />
     <File Path="Scripts\sweet-alert.js" Url="Scripts/sweet-alert.js" ReplaceContent="TRUE" />
     <File Path="Scripts\sweet-alert.min.js" Url="Scripts/sweet-alert.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular-animate.min.js.map" Url="Scripts/angular-animate.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular-animate.min.js" Url="Scripts/angular-animate.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular-animate.js" Url="Scripts/angular-animate.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

@@ -11,9 +11,7 @@
           <Field Name="Local">Microsoft São Paulo</Field>
           <Field Name="Banner">https://descubrasharepoint-7cb14b777b5d35.sharepoint.com/sites/dev/tcw/images/eventos/almsummit2014.png</Field>
           <Field Name="Organizador">Lambda3</Field>
-          <Field Name="Detalhes"><![CDATA[
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a mauris odio. Suspendisse eleifend nec felis faucibus ullamcorper. Donec ipsum neque, pretium eget dolor vitae, eleifend ultrices augue. Nullam dapibus tristique malesuada. Suspendisse turpis risus, fermentum ac volutpat eu, semper gravida augue. Donec euismod ac libero eget molestie. Nam bibendum fermentum semper.
+          <Field Name="Detalhes"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a mauris odio. Suspendisse eleifend nec felis faucibus ullamcorper. Donec ipsum neque, pretium eget dolor vitae, eleifend ultrices augue. Nullam dapibus tristique malesuada. Suspendisse turpis risus, fermentum ac volutpat eu, semper gravida augue. Donec euismod ac libero eget molestie. Nam bibendum fermentum semper.
             </p>
             <p>
               <ul>

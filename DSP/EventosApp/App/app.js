@@ -5,7 +5,9 @@
         // dependencias
         'ngResource', 
         'ngRoute', // rotas
-        'ngCookies' // cookies
+        'ngCookies', // cookies
+        'ngSanitize',
+        'ngAnimate'
     ]);
 
 

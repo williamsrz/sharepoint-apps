@@ -28,5 +28,7 @@
     <ProjectItemFile Source="App\Views\layout\fullHeader.html" Target="App\Views\layout\" Type="ElementFile" />
     <ProjectItemFile Source="App\Services\SharePointEventosService.js" Target="App\Services\" Type="ElementFile" />
     <ProjectItemFile Source="App\Services\SharePointDataContextService.js" Target="App\Services\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Services\usuarioService.js" Target="App\Services\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Services\inscricaoService.js" Target="App\Services\" Type="ElementFile" />
   </Files>
 </ProjectItem>

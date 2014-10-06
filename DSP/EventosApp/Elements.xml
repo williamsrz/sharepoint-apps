@@ -27,5 +27,7 @@
     <File Path="App\Views\layout\fullHeader.html" Url="App/Views/layout/fullHeader.html" ReplaceContent="TRUE" />
     <File Path="App\Services\SharePointEventosService.js" Url="App/Services/SharePointEventosService.js" ReplaceContent="TRUE" />
     <File Path="App\Services\SharePointDataContextService.js" Url="App/Services/SharePointDataContextService.js" ReplaceContent="TRUE" />
+    <File Path="App\Services\usuarioService.js" Url="App/Services/usuarioService.js" ReplaceContent="TRUE" />
+    <File Path="App\Services\inscricaoService.js" Url="App/Services/inscricaoService.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

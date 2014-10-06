@@ -4,67 +4,67 @@
     <ContentTypes>
 
 
-      <ContentType ID="0x01002c06c1526d6d453199b343b3ae1844c6" Name="ListFieldsContentType">
+      
+      
+      
+    <ContentType ID="0x01002c06c1526d6d453199b343b3ae1844c6" Name="ListFieldsContentType">
         <FieldRefs>
-          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
-          <FieldRef ID="{fe9df3ab-8092-4778-b90b-9544e830d7bb}" Name="Evento" />
-        </FieldRefs>
-      </ContentType>
-      <ContentTypeRef ID="0x01">
+          
+          
+        <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{fe9df3ab-8092-4778-b90b-9544e830d7bb}" Name="Evento" /></FieldRefs>
+      </ContentType><ContentTypeRef ID="0x01">
         <Folder TargetName="Item" />
-      </ContentTypeRef>
-      <ContentTypeRef ID="0x0120" />
-    </ContentTypes>
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
     <Fields>
-      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" Hidden="TRUE" />
-      <Field Name="Evento" ID="{fe9df3ab-8092-4778-b90b-9544e830d7bb}" DisplayName="Evento" Type="Lookup" Required="TRUE" List="Lists/Eventos" ShowField="Title" />
-    </Fields>
+      
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" Hidden="TRUE" /><Field Name="Evento" ID="{fe9df3ab-8092-4778-b90b-9544e830d7bb}" DisplayName="Evento" Type="Lookup" Required="TRUE" List="Lists/Eventos" ShowField="Title" /></Fields>
     <Views>
 
 
-      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
         <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
 
-          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
-        </ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
         <Query>
           <OrderBy>
 
-            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
-          </OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
         </Query>
         <ParameterBindings>
           <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
         </ParameterBindings>
-      </View>
-      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
         <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <JSLink>clienttemplates.js</JSLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
 
-          <FieldRef Name="Evento" />
-          <FieldRef Name="Created" />
-          <FieldRef Name="Author" />
-        </ViewFields>
+          
+          
+          
+        <FieldRef Name="Evento" /><FieldRef Name="Created" /><FieldRef Name="Author" /></ViewFields>
         <Query>
           <OrderBy>
 
-            <FieldRef Name="ID"></FieldRef>
-          </OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
         </Query>
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
         </ParameterBindings>
-      </View>
-    </Views>
+      </View></Views>
     <Forms>
       <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
       <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />

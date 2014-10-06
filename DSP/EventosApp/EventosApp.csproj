@@ -47,6 +47,8 @@
   <ItemGroup>
     <None Include="Content\bootstrap-theme.css.map" />
     <None Include="Content\bootstrap.css.map" />
+    <Content Include="App\Services\inscricaoService.js" />
+    <Content Include="App\Services\usuarioService.js" />
     <Content Include="App\Services\SharePointDataContextService.js" />
     <Content Include="App\Services\SharePointEventosService.js" />
     <Content Include="App\Views\layout\fullHeader.html" />
@@ -116,6 +118,7 @@
     <Content Include="Images\eventos\tdc.png" />
     <Content Include="Pages\launcher.html" />
     <Content Include="Pages\Elements.xml" />
+    <None Include="Scripts\angular-animate.min.js.map" />
     <None Include="Scripts\angular-cookies.min.js.map" />
     <None Include="Scripts\angular-resource.min.js.map" />
     <None Include="Scripts\angular-route.min.js.map" />
@@ -131,6 +134,8 @@
       <SharePointProjectItemId>{4e9ddb7c-7c8d-4e14-bccb-82ac0162c942}</SharePointProjectItemId>
     </None>
     <Content Include="Pages\app.html" />
+    <Content Include="Scripts\angular-animate.js" />
+    <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-cookies.js" />
     <Content Include="Scripts\angular-cookies.min.js" />
     <Content Include="Scripts\angular-mocks.js" />

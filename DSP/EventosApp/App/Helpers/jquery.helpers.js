@@ -15,3 +15,12 @@
         return jQuery.getQueryStringValues()[name];
     }
 });
+
+jQuery.extend({
+
+    getDate: function (date, pattern) {
+        
+        return moment(date).format(pattern);
+    },
+
+});

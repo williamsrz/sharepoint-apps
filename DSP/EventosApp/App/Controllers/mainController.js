@@ -34,7 +34,7 @@
                 var evento = {
                     id: item.ID,
                     titulo: item.Title,
-                    inicio: item.Inicio,
+                    inicio: $.getDate(item.Inicio, "DD/MM/YYYY"),
                     local: item.Local,
                     banner: item.Banner.Url,
                 }
