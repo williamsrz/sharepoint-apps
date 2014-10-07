@@ -19,7 +19,6 @@
     function MainController($scope, $log, $location, SharePointDataContextService) {
 
         $scope.titulo = "Eventos em Destaque";
-       
 
         $scope.detalhar = function (evento) {
             $location.path("/eventos/detalhar/" + evento.id);

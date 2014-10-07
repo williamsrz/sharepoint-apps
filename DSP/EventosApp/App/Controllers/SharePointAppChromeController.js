@@ -41,7 +41,7 @@
                       displayName: "[LISTA] Eventos"
                   },
                   {
-                      linkUrl: "Lists/Inscritos",
+                      linkUrl: "Lists/EventosInscritos",
                       displayName: "[LISTA] Inscrições"
                   }
                 ]
@@ -51,7 +51,7 @@
             var nav = new SP.UI.Controls.Navigation("chrome_ctrl_container", sharepointChromeControlData);
 
             // deixo o controle visivel
-            nav.setVisible(true);
+            nav.setVisible(false);
 
             // oculto o topo (header) do sharepoint 
             nav.setBottomHeaderVisible(false);

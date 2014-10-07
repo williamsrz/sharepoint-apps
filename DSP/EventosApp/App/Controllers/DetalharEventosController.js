@@ -36,6 +36,7 @@
             .then(obterUsuario, erro)
             .then(obterEvento, erro)
             .then(obterStatusInscricao, erro);
+
         }
 
         $scope.efetuarInscricao = function (evento) {

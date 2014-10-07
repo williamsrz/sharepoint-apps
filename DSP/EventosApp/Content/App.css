@@ -10,8 +10,6 @@
     padding: 0;
 }
 
-
-
 .no-margin {
     margin: 0;
 }
@@ -50,7 +48,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body { overflow-y:scroll; }
+
 
 /* apenas sobrescrevendo fonte padrão do sharepoint para o app chrome*/
 #suiteBar {
@@ -73,7 +71,7 @@ body { overflow-y:scroll; }
 }
 
 .topo-detalhar-evento {
-    padding-top: 38px;
+    padding-top: 88px;
     padding-bottom: 38px;
     background: #ebebeb;
 }
