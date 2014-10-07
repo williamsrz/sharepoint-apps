@@ -7,7 +7,10 @@
 
 
 
-      <ContentType ID="0x0100989c7c1ca1a74ceeaaabba2e256d5536" Name="ListFieldsContentType">
+      
+      
+      
+    <ContentType ID="0x0100989c7c1ca1a74ceeaaabba2e256d5536" Name="ListFieldsContentType">
         <FieldRefs>
 
 
@@ -17,21 +20,18 @@
 
 
 
-          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
-          <FieldRef ID="{cb94c155-55c7-4241-bc11-0a9d64e7006e}" Name="Descricao" />
-          <FieldRef ID="{fd584147-be38-48e4-895a-85a3e0e6bf6c}" Name="Inicio" />
-          <FieldRef ID="{6aea4ae8-670b-4b87-889e-2f93aa9298b1}" Name="Termino" />
-          <FieldRef ID="{39bf3086-b9fa-46d0-a111-ae9d91b0aac2}" Name="Local" />
-          <FieldRef ID="{2a853b4b-34a3-412c-97dc-e8de810e8cfc}" Name="Banner" />
-          <FieldRef ID="{ab365467-51c2-473b-89ea-e97f51194b65}" Name="Detalhes" />
-          <FieldRef ID="{a89d126d-4ede-4aaf-8b45-9ce2a2bea131}" Name="Organizador" />
-        </FieldRefs>
-      </ContentType>
-      <ContentTypeRef ID="0x01">
+          
+          
+          
+          
+          
+          
+          
+          
+        <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{cb94c155-55c7-4241-bc11-0a9d64e7006e}" Name="Descricao" /><FieldRef ID="{fd584147-be38-48e4-895a-85a3e0e6bf6c}" Name="Inicio" /><FieldRef ID="{6aea4ae8-670b-4b87-889e-2f93aa9298b1}" Name="Termino" /><FieldRef ID="{39bf3086-b9fa-46d0-a111-ae9d91b0aac2}" Name="Local" /><FieldRef ID="{2a853b4b-34a3-412c-97dc-e8de810e8cfc}" Name="Banner" /><FieldRef ID="{ab365467-51c2-473b-89ea-e97f51194b65}" Name="Detalhes" /><FieldRef ID="{a89d126d-4ede-4aaf-8b45-9ce2a2bea131}" Name="Organizador" /></FieldRefs>
+      </ContentType><ContentTypeRef ID="0x01">
         <Folder TargetName="Item" />
-      </ContentTypeRef>
-      <ContentTypeRef ID="0x0120" />
-    </ContentTypes>
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
     <Fields>
 
 
@@ -42,43 +42,44 @@
 
 
 
-      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Nome" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
-      <Field Name="Descricao" ID="{cb94c155-55c7-4241-bc11-0a9d64e7006e}" DisplayName="Descrição" Type="Text" Required="TRUE" MaxLength="165" />
-      <Field Name="Inicio" ID="{fd584147-be38-48e4-895a-85a3e0e6bf6c}" DisplayName="Inicio" Type="DateTime" Required="TRUE" Format="DateTime" />
-      <Field Name="Termino" ID="{6aea4ae8-670b-4b87-889e-2f93aa9298b1}" DisplayName="Termino" Type="DateTime" Required="TRUE" Format="DateTime" />
-      <Field Name="Local" ID="{39bf3086-b9fa-46d0-a111-ae9d91b0aac2}" DisplayName="Local" Type="Text" Required="TRUE" MaxLength="100" />
-      <Field Name="Banner" ID="{2a853b4b-34a3-412c-97dc-e8de810e8cfc}" DisplayName="Banner" Type="URL" Required="TRUE" Format="Image" />
-      <Field Name="Detalhes" ID="{ab365467-51c2-473b-89ea-e97f51194b65}" DisplayName="Detalhes" Type="Note" Required="TRUE" NumLines="30" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" />
-      <Field Name="Organizador" ID="{a89d126d-4ede-4aaf-8b45-9ce2a2bea131}" DisplayName="Organizador" Type="Text" Required="TRUE" MaxLength="100" />
-    </Fields>
+      
+      
+      
+      
+      
+      
+      
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Nome" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="Descricao" ID="{cb94c155-55c7-4241-bc11-0a9d64e7006e}" DisplayName="Descrição" Type="Text" Required="TRUE" MaxLength="165" /><Field Name="Inicio" ID="{fd584147-be38-48e4-895a-85a3e0e6bf6c}" DisplayName="Inicio" Type="DateTime" Required="TRUE" Format="DateTime" /><Field Name="Termino" ID="{6aea4ae8-670b-4b87-889e-2f93aa9298b1}" DisplayName="Termino" Type="DateTime" Required="TRUE" Format="DateTime" /><Field Name="Local" ID="{39bf3086-b9fa-46d0-a111-ae9d91b0aac2}" DisplayName="Local" Type="Text" Required="TRUE" MaxLength="100" /><Field Name="Banner" ID="{2a853b4b-34a3-412c-97dc-e8de810e8cfc}" DisplayName="Banner" Type="URL" Required="TRUE" Format="Image" /><Field Name="Detalhes" ID="{ab365467-51c2-473b-89ea-e97f51194b65}" DisplayName="Detalhes" Type="Note" Required="TRUE" NumLines="30" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" /><Field Name="Organizador" ID="{a89d126d-4ede-4aaf-8b45-9ce2a2bea131}" DisplayName="Organizador" Type="Text" Required="TRUE" MaxLength="100" /></Fields>
     <Views>
 
 
 
 
-      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
         <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
 
 
-          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
-        </ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
         <Query>
           <OrderBy>
 
 
-            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
-          </OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
         </Query>
         <ParameterBindings>
           <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
         </ParameterBindings>
-      </View>
-      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
         <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <JSLink>clienttemplates.js</JSLink>
@@ -93,28 +94,27 @@
 
 
 
-          <FieldRef Name="LinkTitle"></FieldRef>
-          <FieldRef Name="Descricao" />
-          <FieldRef Name="Inicio" />
-          <FieldRef Name="Termino" />
-          <FieldRef Name="Local" />
-          <FieldRef Name="Banner" />
-          <FieldRef Name="Detalhes" />
-          <FieldRef Name="Organizador" />
-        </ViewFields>
+          
+          
+          
+          
+          
+          
+          
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Inicio" /><FieldRef Name="Termino" /><FieldRef Name="Local" /><FieldRef Name="Organizador" /></ViewFields>
         <Query>
           <OrderBy>
 
 
-            <FieldRef Name="ID"></FieldRef>
-          </OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
         </Query>
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
         </ParameterBindings>
-      </View>
-    </Views>
+      </View></Views>
     <Forms>
       <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
       <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />

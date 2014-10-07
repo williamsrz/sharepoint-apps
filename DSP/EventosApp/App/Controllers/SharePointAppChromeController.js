@@ -2,8 +2,7 @@
     'use strict';
 
     // controller
-    var controllerName = 'SharePointAppChromeController';
-
+    var controllerName = 'sharepointAppChromeController';
 
     // configuração do controller 
     angular.module('eventosApp')
@@ -11,30 +10,31 @@
                 ['$scope',
                  '$log',
                  '$location',
-                 'SharePointContextService',
-                  SharePointAppChromeController
+                 'sharepointContextService',
+                  sharepointAppChromeController
                 ]);
 
     // definição do controller
-    function SharePointAppChromeController($scope, $log, $location, SharePointContextService) {
+    function sharepointAppChromeController(
+        $scope, $log, $location, sharepointContextService) {
 
         var sharepointChromeControlData = undefined;
-        var hostWeb = SharePointContextService.hostWeb;
 
-        // inicializar
+        var hostWeb = sharepointContextService.hostWeb;
+
+        // inicializar o controller
         init();
 
         // construtor do controller
         function init() {
 
-            // create chrome control settings
+            // MSDN como criar configurações e o sharepoint chrome control
             // http://msdn.microsoft.com/en-us/library/office/fp179916(v=office.15).aspx
 
             sharepointChromeControlData = {
                 siteUrl: hostWeb.url,
                 siteTitle: hostWeb.title,
-                appIconUrl: hostWeb.logoUrl,
-                appTitle: 'Treinamentos, Cursos e Workshops',
+                //appTitle: 'Treinamentos, Cursos e Workshops',
                 settingsLinks: [
                   {
                       linkUrl: "Lists/Eventos",
@@ -51,13 +51,14 @@
             var nav = new SP.UI.Controls.Navigation("chrome_ctrl_container", sharepointChromeControlData);
 
             // deixo o controle visivel
-            nav.setVisible(false);
+            nav.setVisible(true);
 
             // oculto o topo (header) do sharepoint 
             nav.setBottomHeaderVisible(false);
 
         }
 
+        // log simples
         $log.info('Controller [' + controllerName + '] carregado!');
     };
 

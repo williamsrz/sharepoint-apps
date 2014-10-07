@@ -1,9 +1,9 @@
 ﻿(function () {
+
     'use strict';
 
     // controller
-    var controllerName = 'MainController';
-
+    var controllerName = 'mainController';
 
     // configuração do controller 
     angular.module('eventosApp')
@@ -11,37 +11,47 @@
                 ['$scope',
                  '$log',
                  '$location',
-                 'SharePointDataContextService',
-                  MainController
+                 'eventoService',
+                  mainController
                 ]);
 
     // definição do controller
-    function MainController($scope, $log, $location, SharePointDataContextService) {
+    function mainController(
+        $scope, $log, $location, eventoService) {
 
+        // 
         $scope.titulo = "Eventos em Destaque";
+        $scope.eventos = [];
 
+        // inicializar o controller
+        init();
+
+        // construtor do controller
+        function init() {
+            eventoService.listar().then(function (result) {
+
+                angular.forEach(result, function (item) {
+
+                    var evento = {
+                        id: item.ID,
+                        titulo: item.Title,
+                        inicio: $.getDate(item.Inicio, "DD/MM/YYYY"),
+                        local: item.Local,
+                        banner: item.Banner.Url,
+                        descricao: item.Descricao
+                    }
+
+                    $scope.eventos.push(evento);
+                });
+            });
+        }
+
+        // eventos
         $scope.detalhar = function (evento) {
             $location.path("/eventos/detalhar/" + evento.id);
         };
 
-        //SharePointEventosService.listar($scope);
-        $scope.eventos = [];
-        SharePointDataContextService.listar().then(function (result) {
-           
-            angular.forEach(result, function (item) {
-
-                var evento = {
-                    id: item.ID,
-                    titulo: item.Title,
-                    inicio: $.getDate(item.Inicio, "DD/MM/YYYY"),
-                    local: item.Local,
-                    banner: item.Banner.Url,
-                }
-
-                $scope.eventos.push(evento);
-            });
-        });
-       
+        // log simples
         $log.info('Controller [' + controllerName + '] carregado!');
     };
 

@@ -58,8 +58,8 @@
           <OrderBy>
 
             
-          <FieldRef Name="ID"></FieldRef></OrderBy>
-        </Query>
+          <FieldRef Name="ID"></FieldRef><FieldRef Name="Evento" Ascending="TRUE" /></OrderBy>
+        <GroupBy Collapse="FALSE"><FieldRef Name="Evento" /></GroupBy></Query>
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />

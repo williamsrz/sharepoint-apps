@@ -4,13 +4,10 @@
     <File Path="App\app.js" Url="App/app.js" ReplaceContent="TRUE" />
     <File Path="App\Helpers\jquery.helpers.js" Url="App/Helpers/jquery.helpers.js" ReplaceContent="TRUE" />
     <File Path="App\Controllers\mainController.js" Url="App/Controllers/mainController.js" ReplaceContent="TRUE" />
-    <File Path="App\Controllers\ListarEventosController.js" Url="App/Controllers/ListarEventosController.js" ReplaceContent="TRUE" />
-    <File Path="App\Services\eventosService.js" Url="App/Services/eventosService.js" ReplaceContent="TRUE" />
-    <File Path="App\Views\eventos\listar.html" Url="App/Views/eventos/listar.html" ReplaceContent="TRUE" />
     <File Path="App\Views\layout\main.html" Url="App/Views/layout/main.html" ReplaceContent="TRUE" />
     <File Path="App\Views\eventos\detalhar.html" Url="App/Views/eventos/detalhar.html" ReplaceContent="TRUE" />
     <File Path="App\Controllers\DetalharEventosController.js" Url="App/Controllers/DetalharEventosController.js" ReplaceContent="TRUE" />
-    <File Path="App\Services\SharePointContextService.js" Url="App/Services/SharePointContextService.js" ReplaceContent="TRUE" />
+    <File Path="App\Services\sharepointContextService.js" Url="App/Services/sharepointContextService.js" ReplaceContent="TRUE" />
     <File Path="App\app.launcher.js" Url="App/app.launcher.js" ReplaceContent="TRUE" />
     <File Path="App\Controllers\LauncherController.js" Url="App/Controllers/LauncherController.js" ReplaceContent="TRUE" />
     <File Path="App\Controllers\SharePointAppChromeController.js" Url="App/Controllers/SharePointAppChromeController.js" ReplaceContent="TRUE" />
@@ -24,10 +21,10 @@
     <File Path="fonts\fontawesome-webfont.svg" Url="fonts/fontawesome-webfont.svg" ReplaceContent="TRUE" />
     <File Path="fonts\fontawesome-webfont.eot" Url="fonts/fontawesome-webfont.eot" ReplaceContent="TRUE" />
     <File Path="fonts\FontAwesome.otf" Url="fonts/FontAwesome.otf" ReplaceContent="TRUE" />
-    <File Path="App\Views\layout\fullHeader.html" Url="App/Views/layout/fullHeader.html" ReplaceContent="TRUE" />
-    <File Path="App\Services\SharePointEventosService.js" Url="App/Services/SharePointEventosService.js" ReplaceContent="TRUE" />
-    <File Path="App\Services\SharePointDataContextService.js" Url="App/Services/SharePointDataContextService.js" ReplaceContent="TRUE" />
+    <File Path="App\Views\layout\header.html" Url="App/Views/layout/header.html" ReplaceContent="TRUE" />
+    <File Path="App\Services\eventoService.js" Url="App/Services/eventoService.js" ReplaceContent="TRUE" />
     <File Path="App\Services\usuarioService.js" Url="App/Services/usuarioService.js" ReplaceContent="TRUE" />
     <File Path="App\Services\inscricaoService.js" Url="App/Services/inscricaoService.js" ReplaceContent="TRUE" />
+    <File Path="App\Controllers\eventosController.js" Url="App/Controllers/eventosController.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

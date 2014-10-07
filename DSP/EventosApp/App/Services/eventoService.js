@@ -3,7 +3,7 @@
     'use strict';
 
     // serviço
-    var serviceName = "SharePointDataContextService"
+    var serviceName = "eventoService"
 
     // configuração do serviço
     angular.module('eventosApp')
@@ -12,16 +12,19 @@
                 '$http',
                 '$resource',
                 '$q',
-                'SharePointContextService',
-                SharePointDataContextService
+                'sharepointContextService',
+                eventoService
         ]);
 
 
     // definição do serviço
-    function SharePointDataContextService($log, $http, $resource, $q, SharePointContextService) {
+    function eventoService(
+        $log, $http, $resource, $q, sharepointContextService) {
 
-        var dataContextService = this;
-        dataContextService.hostWeb = SharePointContextService.hostWeb;
+        var srv = this;
+
+        // recupero configurações de contexto 
+        srv.hostWeb = sharepointContextService.hostWeb;
 
         //definição dos headers
         $http.defaults.headers.common.Accept = "application/json;odata=verbose";
@@ -29,14 +32,18 @@
         $http.defaults.headers.post['X-Requested-With'] = 'XMLHttpRequest';
         $http.defaults.headers.post['If-Match'] = "*";
 
-        function listarEventos() {
+        // funções
+
+        function selecionarEventos() {
+
             var dfd = $q.defer();
 
-            $http.defaults.headers.post['X-HTTP-Method'] = ""
+            $http.defaults.headers.post['X-HTTP-Method'] = "GET";
 
-            var query = "?$select=ID,Title,Inicio,Local,Banner&$orderby=Inicio desc";
+            var query = "?$select=ID,Title,Inicio,Local,Banner,Descricao&$orderby=Inicio desc";
 
-            var restUrl = dataContextService.hostWeb.appWebUrl + "/_api/web/lists/getByTitle('Eventos')/items" + query;
+            var restUrl = srv.hostWeb.appWebUrl +
+                "/_api/web/lists/getByTitle('Eventos')/items" + query;
 
             $http.get(restUrl).success(function (data) {
 
@@ -49,13 +56,14 @@
             return dfd.promise;
         };
 
-        function detalharEvento(eventoId) {
+        function selecionarEvento(eventoId) {
+
             var dfd = $q.defer();
 
-            $http.defaults.headers.post['X-HTTP-Method'] = ""
+            $http.defaults.headers.post['X-HTTP-Method'] = "GET";
 
             var query = "?$select=ID,Title,Inicio,Local,Termino,Organizador,Local,Banner,Descricao,Detalhes";
-            var restUrl = dataContextService.hostWeb.appWebUrl + "/_api/web/lists/getByTitle('Eventos')/items(" + eventoId + ")" + query;
+            var restUrl = srv.hostWeb.appWebUrl + "/_api/web/lists/getByTitle('Eventos')/items(" + eventoId + ")" + query;
 
             $http.get(restUrl).success(function (data) {
                 dfd.resolve(data.d);
@@ -68,10 +76,9 @@
 
         // assinatura do serviço
         return {
-            listar: listarEventos,
-            detalhar: detalharEvento
+            listar: selecionarEventos,
+            detalhar: selecionarEvento
         };
-
     };
 
 }());

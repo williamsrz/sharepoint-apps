@@ -48,7 +48,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
+body {
+    overflow-y: scroll;
+}
 
 /* apenas sobrescrevendo fonte padrão do sharepoint para o app chrome*/
 #suiteBar {
@@ -56,22 +58,14 @@
 }
 
 .topo {
-    background: #f44d1c;
-    background: -moz-linear-gradient(top, #f44d1c 0%, #e0351a 50%, #e0351a 51%, #d61f19 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f44d1c), color-stop(50%,#e0351a), color-stop(51%,#e0351a), color-stop(100%,#d61f19)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #f44d1c 0%,#e0351a 50%,#e0351a 51%,#d61f19 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #f44d1c 0%,#e0351a 50%,#e0351a 51%,#d61f19 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #f44d1c 0%,#e0351a 50%,#e0351a 51%,#d61f19 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #f44d1c 0%,#e0351a 50%,#e0351a 51%,#d61f19 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f44d1c', endColorstr='#d61f19',GradientType=0 ); /* IE6-9 */
-    padding-top: 78px;
-    padding-bottom: 148px;
-    color: #fff;
+    background: #F1F1F1;
+    padding-top: 28px;
+    padding-bottom: 28px;
     text-align: center;
 }
 
 .topo-detalhar-evento {
-    padding-top: 88px;
+    padding-top: 58px;
     padding-bottom: 38px;
     background: #ebebeb;
 }
@@ -122,15 +116,16 @@
    on the base class as well (.repeat-item) */
 .view-container.ng-enter,
 .view-container.ng-leave {
-  -webkit-transition:0.4s ease-in-out all;
-  transition:0.4s ease-in-out all;
+    -webkit-transition: 0.4s ease-in-out all;
+    transition: 0.4s ease-in-out all;
 }
 
-.view-container.ng-enter,
-.view-container.ng-leave.ng-leave-active {
-  opacity:0;
-}
-.view-container.ng-leave,
-.view-container.ng-enter.ng-enter-active {
-  opacity:1;
-}
+    .view-container.ng-enter,
+    .view-container.ng-leave.ng-leave-active {
+        opacity: 0;
+    }
+
+        .view-container.ng-leave,
+        .view-container.ng-enter.ng-enter-active {
+            opacity: 1;
+        }

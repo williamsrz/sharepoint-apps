@@ -1,8 +1,9 @@
 ﻿(function () {
+
     'use strict';
 
     // nome controller
-    var controllerName = 'DetalharEventosController';
+    var controllerName = 'detalharEventoController';
 
     // configuração do controller 
     angular.module('eventosApp')
@@ -12,32 +13,37 @@
                  '$filter',
                  '$location',
                  '$routeParams',
-                 'SharePointDataContextService',
+                 'eventoService',
                  'usuarioService',
                  'inscricaoService',
-                  DetalharEventosController
+                  detalharEventoController
                 ]);
 
     // definição do controller
-    function DetalharEventosController($scope, $log, $filter, $location, $routeParams, SharePointDataContextService, usuarioService, inscricaoService) {
+    function detalharEventoController(
+        $scope, $log, $filter, $location, $routeParams, eventoService, usuarioService, inscricaoService) {
 
-        var controller = this;
-
+        // parametro da rota
         var eventoId = $routeParams.id;
+
+        //
         $scope.titulo = "Eventos em Destaque";
         $scope.evento = null;
         $scope.inscricao = null;
         $scope.inscrito = false;
 
-        inicializar();
+        // inicializar
+        init();
 
-        function inicializar() {
+        // construtor do controller
+        function init() {
             usuarioService.usuarioCorrente()
             .then(obterUsuario, erro)
             .then(obterEvento, erro)
             .then(obterStatusInscricao, erro);
-
         }
+
+        // eventos interface
 
         $scope.efetuarInscricao = function (evento) {
 
@@ -49,16 +55,17 @@
                 confirmar("Que pena!", mensagem, "Não, espera!", "Sim, é isso mesmo!", function () {
                     inscricaoService.cancelar($scope.inscricao)
                     .then(cancelarInscricao, erro)
-                    .then(inicializar, erro);
+                    .then(init, erro);
                 });
             }
             else {
                 inscricaoService.adicionar(evento)
                     .then(realizarInscricao, erro)
-                    .then(inicializar, erro);
+                    .then(init, erro);
             }
         };
 
+        //Funções
 
         //Inscrição
 
@@ -76,7 +83,7 @@
             var usuarioId = $scope.usuario.Id;
             $scope.inscrito = false;
 
-            inscricaoService.inscricaoEventoUsuario(usuarioId, eventoId)
+            inscricaoService.selecionar(usuarioId, eventoId)
                 .then(function (result) {
 
                     $scope.inscricao = (result.length > 0) ? result[0] : null;
@@ -95,7 +102,7 @@
 
         function obterEvento() {
 
-            SharePointDataContextService.detalhar(eventoId)
+            eventoService.detalhar(eventoId)
                 .then(function (result) {
 
                     var item = result;
@@ -114,9 +121,6 @@
 
                 }, erro);
         }
-
-
-
 
         //Mensagens
 
@@ -139,7 +143,7 @@
                 title: titulo,
                 text: mensagem,
                 type: "success",
-                confirmButtonText: "Legal!"
+                confirmButtonText: "OK!"
             });
         };
 
@@ -152,6 +156,7 @@
             });
         }
 
+        //Log simples
         $log.info('Controller [' + controllerName + '] carregado!');
     };
 

@@ -4,17 +4,14 @@
     <ProjectItemFile Source="Elements.xml" Type="ElementManifest" />
     <ProjectItemFile Source="App\app.js" Target="App\" Type="ElementFile" />
     <ProjectItemFile Source="App\Helpers\jquery.helpers.js" Target="App\Helpers\" Type="ElementFile" />
-    <ProjectItemFile Source="App\Controllers\MainController.js" Target="App\Controllers\" Type="ElementFile" />
-    <ProjectItemFile Source="App\Controllers\ListarEventosController.js" Target="App\Controllers\" Type="ElementFile" />
-    <ProjectItemFile Source="App\Services\EventosService.js" Target="App\Services\" Type="ElementFile" />
-    <ProjectItemFile Source="App\Views\eventos\listar.html" Target="App\Views\eventos\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Controllers\mainController.js" Target="App\Controllers\" Type="ElementFile" />
     <ProjectItemFile Source="App\Views\layout\main.html" Target="App\Views\layout\" Type="ElementFile" />
     <ProjectItemFile Source="App\Views\eventos\detalhar.html" Target="App\Views\eventos\" Type="ElementFile" />
-    <ProjectItemFile Source="App\Controllers\DetalharEventosController.js" Target="App\Controllers\" Type="ElementFile" />
-    <ProjectItemFile Source="App\Services\SharePointContextService.js" Target="App\Services\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Controllers\detalharEventosController.js" Target="App\Controllers\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Services\sharepointContextService.js" Target="App\Services\" Type="ElementFile" />
     <ProjectItemFile Source="App\app.launcher.js" Target="App\" Type="ElementFile" />
-    <ProjectItemFile Source="App\Controllers\LauncherController.js" Target="App\Controllers\" Type="ElementFile" />
-    <ProjectItemFile Source="App\Controllers\SharePointAppChromeController.js" Target="App\Controllers\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Controllers\launcherController.js" Target="App\Controllers\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Controllers\sharepointAppChromeController.js" Target="App\Controllers\" Type="ElementFile" />
     <ProjectItemFile Source="App\Views\layout\sharepointAppChrome.html" Target="App\Views\layout\" Type="ElementFile" />
     <ProjectItemFile Source="fonts\glyphicons-halflings-regular.woff" Target="fonts\" Type="ElementFile" />
     <ProjectItemFile Source="fonts\glyphicons-halflings-regular.ttf" Target="fonts\" Type="ElementFile" />
@@ -25,10 +22,10 @@
     <ProjectItemFile Source="fonts\fontawesome-webfont.svg" Target="fonts\" Type="ElementFile" />
     <ProjectItemFile Source="fonts\fontawesome-webfont.eot" Target="fonts\" Type="ElementFile" />
     <ProjectItemFile Source="fonts\FontAwesome.otf" Target="fonts\" Type="ElementFile" />
-    <ProjectItemFile Source="App\Views\layout\fullHeader.html" Target="App\Views\layout\" Type="ElementFile" />
-    <ProjectItemFile Source="App\Services\SharePointEventosService.js" Target="App\Services\" Type="ElementFile" />
-    <ProjectItemFile Source="App\Services\SharePointDataContextService.js" Target="App\Services\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Views\layout\header.html" Target="App\Views\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Services\eventoService.js" Target="App\Services\" Type="ElementFile" />
     <ProjectItemFile Source="App\Services\usuarioService.js" Target="App\Services\" Type="ElementFile" />
     <ProjectItemFile Source="App\Services\inscricaoService.js" Target="App\Services\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Controllers\eventosController.js" Target="App\Controllers\" Type="ElementFile" />
   </Files>
 </ProjectItem>

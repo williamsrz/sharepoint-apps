@@ -2,13 +2,19 @@
 
     /*
         A ideia aqui é pegar os parametros enviados por querystring,  
-        gravar como cookie para termos uma url limpa para app
+        gravar como cookie para termos uma url limpa para app.
+
+        O conjunto de informações que são disponibilizadas via query string 
+            http://msdn.microsoft.com/en-us/library/office/jj163816(v=office.15).aspx
+
+        Exemplo de criação de seviço de contexto com base em 
+
     */
 
     'use strict';
 
     // serviço
-    var serviceName = "SharePointContextService"
+    var serviceName = "sharepointContextService"
 
     // configuração do serviço
     angular.module('eventosApp')
@@ -19,14 +25,15 @@
                 '$location',
                 '$resource',
                 '$timeout',
-                 SharePointContextService]);
-
+                 sharepointContextService]);
 
     // definição do serviço
-    function SharePointContextService($log, $cookieStore, $window, $location, $resource, $timeout) {
+    function sharepointContextService(
+        $log, $cookieStore, $window, $location, $resource, $timeout) {
 
-        var servico = this;
+        var svc = this;
 
+        // objeto informações do contexto
         var spWeb = {
             appWebUrl: '',
             url: '',
@@ -34,8 +41,7 @@
             logoUrl: ''
         };
 
-        servico.hostWeb = spWeb;
-
+        svc.hostWeb = spWeb;
 
         // if valores não existem na querystring
         if (decodeURIComponent($.getQueryStringValue("SPHostUrl")) === "undefined") {
@@ -51,20 +57,18 @@
             criarSharePointAppContext();
         }
 
-        $log.info('Serviço [' + serviceName + '] carregado!');
-
         // recupero as informações gravadas no cookie
         function obterSharePointAppContextCookie() {
-
-            servico.hostWeb.appWebUrl = $cookieStore.get('SPAppWebUrl');
-            servico.hostWeb.url = $cookieStore.get('SPHostUrl');
-            servico.hostWeb.title = $cookieStore.get('SPHostTitle');
-            servico.hostWeb.logoUrl = $cookieStore.get('SPHostLogoUrl');
+            svc.hostWeb.appWebUrl = $cookieStore.get('SPAppWebUrl');
+            svc.hostWeb.url = $cookieStore.get('SPHostUrl');
+            svc.hostWeb.title = $cookieStore.get('SPHostTitle');
+            svc.hostWeb.logoUrl = $cookieStore.get('SPHostLogoUrl');
         }
 
         // atualização automatica do sharepoint security validation digest
         function atualizarSharePointSecurityValidationDigest() {
 
+            // 
             var siteContextInfoResource = $resource('_api/contextinfo?$select=FormDigestValue', {}, {
                 post: {
                     method: 'POST',
@@ -80,7 +84,7 @@
 
                 // recupero o security digest timeout e value & guardo no serviço
                 var validacaoRefreshTimeout = data.d.GetContextWebInformation.FormDigestTimeoutSeconds - 5;
-                servico.securityValidation = data.d.GetContextWebInformation.FormDigestValue;
+                svc.securityValidation = data.d.GetContextWebInformation.FormDigestValue;
 
                 // repeat this in FormDigestTimeoutSeconds-5
                 $timeout(function () {
@@ -94,7 +98,6 @@
             }, function (error) {
                 $log.error(error);
             });
-
         }
 
         // crio o contexto para app, salvando as informações que são enviadas via querystring para o cookie
@@ -116,6 +119,8 @@
             // redireciono para a app
             $window.location.href = appWebUrl + '/app.html';
         }
+
+        $log.info('Serviço [' + serviceName + '] carregado!');
     };
 
 }());

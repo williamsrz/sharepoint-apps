@@ -12,31 +12,33 @@
                 '$http',
                 '$resource',
                 '$q',
-                'SharePointContextService',
+                'sharepointContextService',
                 usuarioService
         ]);
 
 
     // definição do serviço
-    function usuarioService($log, $http, $resource, $q, SharePointContextService) {
+    function usuarioService(
+        $log, $http, $resource, $q, sharepointContextService) {
 
-        var dataContextService = this;
-        dataContextService.hostWeb = SharePointContextService.hostWeb;
+        var svc = this;
+        svc.hostWeb = sharepointContextService.hostWeb;
 
         //definição dos headers
         $http.defaults.headers.common.Accept = "application/json;odata=verbose";
         $http.defaults.headers.post['Content-Type'] = 'application/json;odata=verbose';
         $http.defaults.headers.post['X-Requested-With'] = 'XMLHttpRequest';
         $http.defaults.headers.post['If-Match'] = "*";
+        $http.defaults.headers.post['X-RequestDigest'] = sharepointContextService.securityValidation;
+
 
         function obterUsuarioCorrente() {
 
             var dfd = $q.defer();
 
-            $http.defaults.headers.post['X-HTTP-Method'] = "";
-            $http.defaults.headers.post['X-RequestDigest'] = SharePointContextService.securityValidation;
+            $http.defaults.headers.post['X-HTTP-Method'] = "GET";
 
-            var restUrl = dataContextService.hostWeb.appWebUrl + "/_api/web/currentUser";
+            var restUrl = svc.hostWeb.appWebUrl + "/_api/web/currentUser";
 
             $http.get(restUrl, {
             }).success(function (data) {
@@ -54,6 +56,3 @@
     };
 
 }());
-
-//var query = '?$filter=AuthorId eq ' + user.Id;
-//getListItems(url, listname, query, complete, failure);

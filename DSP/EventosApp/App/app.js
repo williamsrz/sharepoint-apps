@@ -3,7 +3,7 @@
     // configuração do modulo para app
     var app = angular.module("eventosApp", [
         // dependencias
-        'ngResource', 
+        'ngResource',
         'ngRoute', // rotas
         'ngCookies', // cookies
         'ngSanitize',
@@ -16,15 +16,15 @@
         $routeProvider
             .when("/main", {
                 templateUrl: "App/Views/layout/main.html",
-                controller: "MainController"
-            })
-            .when("/eventos", {
-                templateUrl: "App/Views/eventos/listar.html",
-                controller: "ListarEventosController"
+                controller: "mainController"
             })
             .when("/eventos/detalhar/:id", {
                 templateUrl: "App/Views/eventos/detalhar.html",
-                controller: "DetalharEventosController"
+                controller: "detalharEventoController"
+            })
+            .when("/eventos/incluir", {
+                templateUrl: "App/Views/eventos/incluir.html",
+                controller: "eventosController"
             })
             .otherwise({ redirectTo: "/main" });
     });

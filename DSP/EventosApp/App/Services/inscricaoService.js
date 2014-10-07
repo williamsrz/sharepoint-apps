@@ -12,16 +12,19 @@
                 '$http',
                 '$resource',
                 '$q',
-                'SharePointContextService',
+                'sharepointContextService',
                 inscricaoService
         ]);
 
 
     // definição do serviço
-    function inscricaoService($log, $http, $resource, $q, SharePointContextService) {
+    function inscricaoService(
+        $log, $http, $resource, $q, sharepointContextService) {
 
-        var dataContextService = this;
-        dataContextService.hostWeb = SharePointContextService.hostWeb;
+        var svc = this;
+
+        // recupero configurações de contexto 
+        svc.hostWeb = sharepointContextService.hostWeb;
 
         //definição dos headers
         $http.defaults.headers.common.Accept = "application/json;odata=verbose";
@@ -29,15 +32,17 @@
         $http.defaults.headers.post['X-Requested-With'] = 'XMLHttpRequest';
         $http.defaults.headers.post['If-Match'] = "*";
 
-        function obterInscricaoEventoUsuario(usuarioId, eventoId) {
+        // funcoes
+
+        function selecionarInscricao(usuarioId, eventoId) {
 
             var dfd = $q.defer();
 
-            $http.defaults.headers.post['X-HTTP-Method'] = "";
-            $http.defaults.headers.post['X-RequestDigest'] = SharePointContextService.securityValidation;
+            $http.defaults.headers.post['X-HTTP-Method'] = "GET";
+            $http.defaults.headers.post['X-RequestDigest'] = sharepointContextService.securityValidation;
 
             var query = '?$filter=EventoId eq ' + eventoId + ' and AuthorId eq ' + usuarioId;
-            var restUrl = dataContextService.hostWeb.appWebUrl + "/_api/web/lists/getByTitle('Inscritos')/items" + query;
+            var restUrl = svc.hostWeb.appWebUrl + "/_api/web/lists/getByTitle('Inscritos')/items" + query;
 
             $http.get(restUrl).success(function (data) {
                 dfd.resolve(data.d.results);
@@ -48,13 +53,14 @@
             return dfd.promise;
         };
 
-        function adcionarIncricao(evento) {
+        function adcionarInscricao(evento) {
             var dfd = $q.defer();
-            $http.defaults.headers.post['X-HTTP-Method'] = "";
-            $http.defaults.headers.post['X-RequestDigest'] = SharePointContextService.securityValidation;
+
+            $http.defaults.headers.post['X-HTTP-Method'] = "POST";
+            $http.defaults.headers.post['X-RequestDigest'] = sharepointContextService.securityValidation;
 
             var query = "?$select=ID,Title,Inicio,Local,Termino,Organizador,Local,Banner,Descricao,Detalhes";
-            var restUrl = dataContextService.hostWeb.appWebUrl + "/_api/web/lists/getbytitle('Inscritos')/items" + query;
+            var restUrl = svc.hostWeb.appWebUrl + "/_api/web/lists/getbytitle('Inscritos')/items" + query;
 
             $http.post(restUrl, {
                 __metadata: {
@@ -76,10 +82,11 @@
             var dfd = $q.defer();
 
             $http.defaults.headers.post['X-HTTP-Method'] = "DELETE";
+            $http.defaults.headers.post['X-RequestDigest'] = sharepointContextService.securityValidation;
 
             $log.info(inscricao.ID);
 
-            var restUrl = dataContextService.hostWeb.appWebUrl + "/_api/web/lists/getByTitle('Inscritos')/items(" + inscricao.ID + ")"
+            var restUrl = svc.hostWeb.appWebUrl + "/_api/web/lists/getByTitle('Inscritos')/items(" + inscricao.ID + ")"
 
             $http.post(restUrl).success(function (data) {
                 dfd.resolve(true);
@@ -90,14 +97,12 @@
             return dfd.promise;
         }
 
+        // assinatura do serviço
         return {
-            inscricaoEventoUsuario: obterInscricaoEventoUsuario,
-            adicionar: adcionarIncricao,
+            selecionar: selecionarInscricao,
+            adicionar: adcionarInscricao,
             cancelar: excluirInscricao
         };
     };
 
 }());
-
-//var query = '?$filter=AuthorId eq ' + user.Id;
-//getListItems(url, listname, query, complete, failure);

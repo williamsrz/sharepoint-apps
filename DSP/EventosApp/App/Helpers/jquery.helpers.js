@@ -1,4 +1,6 @@
-﻿jQuery.extend({
+﻿
+// função para obter parametros da query string 
+jQuery.extend({
 
     getQueryStringValues: function () {
         var vars = [], hash;

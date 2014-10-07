@@ -1,21 +1,29 @@
 ﻿(function () {
+
     'use strict';
 
     // controller
-    var controllerName = 'LauncherController';
-
+    var controllerName = 'launcherController';
 
     // configuração do controller 
     angular.module('eventosApp')
         .controller(controllerName, [
             '$log',
-            'SharePointContextService',
-             LauncherController
+            'sharepointContextService',
+             launcherController
         ]);
 
     // definição do controller
-    function LauncherController($log, SharePointContextService) {
 
+    function launcherController($log, sharepointContextService) {
+
+        // inicializar
+        init();
+
+        // construtor do controller
+        function init() { };
+
+        // log simples
         $log.info('Controller [' + controllerName + '] carregado!');
     }
 

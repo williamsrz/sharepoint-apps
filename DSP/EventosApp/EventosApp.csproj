@@ -47,11 +47,11 @@
   <ItemGroup>
     <None Include="Content\bootstrap-theme.css.map" />
     <None Include="Content\bootstrap.css.map" />
+    <Content Include="App\Controllers\eventosController.js" />
     <Content Include="App\Services\inscricaoService.js" />
     <Content Include="App\Services\usuarioService.js" />
-    <Content Include="App\Services\SharePointDataContextService.js" />
-    <Content Include="App\Services\SharePointEventosService.js" />
-    <Content Include="App\Views\layout\fullHeader.html" />
+    <Content Include="App\Services\eventoService.js" />
+    <Content Include="App\Views\layout\header.html" />
     <Content Include="Content\animate.css" />
     <Content Include="Content\sweet-alert.css" />
     <Content Include="Data\EventosInscritos\Elements.xml" />
@@ -60,8 +60,8 @@
     <Content Include="Data\Eventos\Elements.xml" />
     <Content Include="Data\Eventos\EventosInstance\Elements.xml" />
     <Content Include="Data\Eventos\Schema.xml" />
-    <Content Include="Features\Feature2\Feature2.Template.xml">
-      <DependentUpon>Feature2.feature</DependentUpon>
+    <Content Include="Features\EventosApp.Listas\EventosApp.Listas.Template.xml">
+      <DependentUpon>EventosApp.Listas.feature</DependentUpon>
     </Content>
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
@@ -83,7 +83,7 @@
     <None Include="Data\Eventos\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{c92145a5-7953-4c41-827c-d32129c0f433}</SharePointProjectItemId>
     </None>
-    <None Include="Features\Feature2\Feature2.feature">
+    <None Include="Features\EventosApp.Listas\EventosApp.Listas.feature">
       <FeatureId>{40a4fc47-beb8-4037-8556-67c6e1ef703e}</FeatureId>
     </None>
     <None Include="packages.config" />
@@ -91,16 +91,13 @@
       <SharePointProjectItemId>{c3b964f4-2772-4bdf-9842-76d0d7a587df}</SharePointProjectItemId>
     </None>
     <Content Include="App\app.launcher.js" />
-    <Content Include="App\Controllers\DetalharEventosController.js" />
-    <Content Include="App\Controllers\ListarEventosController.js" />
-    <Content Include="App\Controllers\LauncherController.js" />
-    <Content Include="App\Controllers\SharePointAppChromeController.js" />
-    <Content Include="App\Controllers\MainController.js" />
+    <Content Include="App\Controllers\detalharEventosController.js" />
+    <Content Include="App\Controllers\launcherController.js" />
+    <Content Include="App\Controllers\sharepointAppChromeController.js" />
+    <Content Include="App\Controllers\mainController.js" />
     <Content Include="App\Helpers\jquery.helpers.js" />
-    <Content Include="App\Services\SharePointContextService.js" />
-    <Content Include="App\Services\EventosService.js" />
+    <Content Include="App\Services\sharepointContextService.js" />
     <Content Include="App\Views\eventos\detalhar.html" />
-    <Content Include="App\Views\eventos\listar.html" />
     <Content Include="App\Views\layout\sharepointAppChrome.html" />
     <Content Include="App\Views\layout\main.html" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -186,11 +183,11 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="Features\Feature1\Feature1.feature">
+    <None Include="Features\EventosApp.Estrutura\EventosApp.Estrutura.feature">
       <FeatureId>{4debab46-a685-41cd-b76a-eb9e3b8b36a9}</FeatureId>
     </None>
-    <None Include="Features\Feature1\Feature1.Template.xml">
-      <DependentUpon>Feature1.feature</DependentUpon>
+    <None Include="Features\EventosApp.Estrutura\EventosApp.Estrutura.Template.xml">
+      <DependentUpon>EventosApp.Estrutura.feature</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -198,9 +195,7 @@
       <SubType>Designer</SubType>
     </AppManifestFile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App\Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
