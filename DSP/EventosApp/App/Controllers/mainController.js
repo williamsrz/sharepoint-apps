@@ -20,7 +20,7 @@
         $scope, $log, $location, eventoService) {
 
         // 
-        $scope.titulo = "Eventos em Destaque";
+        $scope.titulo = "Eventos";
         $scope.eventos = [];
 
         // inicializar o controller
@@ -28,6 +28,7 @@
 
         // construtor do controller
         function init() {
+
             eventoService.listar().then(function (result) {
 
                 angular.forEach(result, function (item) {

@@ -1,5 +1,10 @@
 ﻿(function () {
 
+    /*
+     * Promessa representa o resultado final de uma operação. 
+     */
+
+
     'use strict';
 
     // serviço
@@ -54,6 +59,7 @@
             });
 
             return dfd.promise;
+            //Promessa representa o resultado final de uma operação. 
         };
 
         function selecionarEvento(eventoId) {

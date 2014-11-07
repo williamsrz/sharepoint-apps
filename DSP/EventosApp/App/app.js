@@ -6,8 +6,8 @@
         'ngResource',
         'ngRoute', // rotas
         'ngCookies', // cookies
-        'ngSanitize',
-        'ngAnimate'
+        'ngSanitize', // tratar html
+        'ngAnimate' // animações
     ]);
 
 
